@@ -14,13 +14,40 @@ https://oai-pmh.riksarkivet.se/OAI
 
 Riksarkivets OAI-PMH Repository stöder följande OAI-PMH-metoder "verb":
 
+#### Identify
+
+https://oai-pmh.riksarkivet.se/OAI?verb=Identify
+
+Svaret innehåller grundläggande information om tjänsten.
+
+
+
 #### List metadata formats
 
-https://oai-pmh.riksarkivet.se/OAI?verb=listmetadataformats
+https://oai-pmh.riksarkivet.se/OAI?verb=ListMetadataFormats
 
 Svaret listar de XML-format för metadata som tjänsten stöder.
 
 * [Encoded Archival Description (EAD)](https://www.loc.gov/ead/)
 * [Encoded Archival Description, anpassad för Archives Portal Europe (apeEAD)](http://wiki.archivesportaleurope.net/index.php/apeEAD)
 * [Encoded Archival Description, anpassad för Riksarkivet (raEAD)](?)
+
+### List ?
+
+https://oai-pmh.riksarkivet.se/OAI?verb=ListAllAuth
+
+Svaret listar ? OBS! metoden ListAllAuth ingår inte i OAI-PMH-standarden.
+
+### List sets
+
+Tjänsten stöder inte metoden **ListSets**.
+
+### List identifiers
+
+https://oai-pmh.riksarkivet.se/OAI/[dataset]?verb=ListIdentifiers
+
+t.ex.
+https://oai-pmh.riksarkivet.se/OAI/SE_ULA?verb=ListIdentifiers
+
+Svaret listar alla identifierare för poster i datasetet.
 
