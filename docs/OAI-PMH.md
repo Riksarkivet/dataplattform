@@ -51,3 +51,9 @@ https://oai-pmh.riksarkivet.se/OAI/SE_ULA?verb=ListIdentifiers
 
 Svaret listar alla identifierare för poster i datasetet.
 
+### List records
+
+Tjänsten stöder inte metoden **ListRecords**.
+
+### Get record
+
