@@ -33,17 +33,17 @@ Svaret listar de XML-format för metadata som tjänsten stöder.
 * [Encoded Archival Description, anpassad för Archives Portal Europe (apeEAD)](http://wiki.archivesportaleurope.net/index.php/apeEAD)
 * [Encoded Archival Description, anpassad för Riksarkivet (RA-EAD)](http://xml.ra.se/ead/RA_EAD.xsd)
 
-### List datasets
+#### List datasets
 
 https://oai-pmh.riksarkivet.se/OAI?verb=ListAllAuth
 
 Svaret listar de dataset som finns tillgängliga för **ListIdentifier**. OBS! metoden ListAllAuth ingår inte i OAI-PMH-standarden, resultatet refererar till OAI-PMH:s SML-schema men validerar inte mot det.
 
-### List sets
+#### List sets
 
 Tjänsten stöder inte metoden **ListSets**.
 
-### List identifiers
+#### List identifiers
 
 https://oai-pmh.riksarkivet.se/OAI/{dataset}?verb=ListIdentifiers
 
@@ -55,11 +55,11 @@ Svaret listar alla identifierare för poster i datasetet. Tjänsten stöder inte
 
 Notera att datasetets id måste anges i adressen (/SE_ULA i exemplet).
 
-### List records
+#### List records
 
 Tjänsten stöder inte metoden **ListRecords**. För att hämta kompletta data om ett dataset, använd ListIdentifiers och ett anrop till GetRecord för varje identifierare.
 
-### Get record
+#### Get record
 
 https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier={identifier}&metadataPrefix={metadata-prefix}
 
