@@ -28,7 +28,9 @@ Svaret innehåller grundläggande information om tjänsten.
 
 https://oai-pmh.riksarkivet.se/OAI?verb=ListMetadataFormats
 
-Svaret listar de XML-format för metadata som tjänsten stöder.
+Svaret listar de XML-format för metadata som tjänsten stöder. 
+
+OBS! tjänsten stöder inte query-parametern identifier={identifier} för att lista vilka metadataformat som är tillgängliga för en specifik post.
 
 * [Encoded Archival Description, anpassad för Archives Portal Europe (apeEAD)](http://wiki.archivesportaleurope.net/index.php/apeEAD)
 * [Encoded Archival Description, anpassad för Riksarkivet (RA-EAD)](http://xml.ra.se/ead/RA_EAD.xsd)
