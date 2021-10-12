@@ -39,7 +39,7 @@ OBS! tjänsten stöder inte query-parametern identifier={identifier} för att li
 
 https://oai-pmh.riksarkivet.se/OAI?verb=ListAllAuth
 
-Svaret listar de dataset som finns tillgängliga för **ListIdentifier**. OBS! metoden ListAllAuth ingår inte i OAI-PMH-standarden, resultatet refererar till OAI-PMH:s SML-schema men validerar inte mot det.
+Svaret listar de dataset som finns tillgängliga för **ListIdentifier**. OBS! metoden ListAllAuth ingår inte i OAI-PMH-standarden, resultatet refererar till OAI-PMH:s XML-schema men validerar inte mot det.
 
 #### List sets
 
@@ -76,4 +76,4 @@ t.ex.
 
 https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier=SE/ULA/10012&metadataPrefix=oai_ape_ead
 
-Svaret innehåller fullständiga data för en post.
+Svaret innehåller fullständiga data för en post i angivet dataformat (apeEAD eller RA-EAD).
