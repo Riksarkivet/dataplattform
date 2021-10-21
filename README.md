@@ -5,3 +5,5 @@
 ## [OAI-PMH](docs/OAI-PMH.md)
 
 ## [IIIF](docs/IIIF.md)
+
+## [Sök-API](docs/Sök-API.md)
