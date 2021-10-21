@@ -6,7 +6,13 @@ Dessa används i Riksarkivets tjänst [Sök i arkiven](https://sok.riksarkivet.s
 
 ## IIIF Image
 
+Image-APIet har metoder för att bearbeta källbilder. Riksarkivets IIIF-tjänst når [compliance level 1](https://iiif.io/api/image/3.0/compliance/), och stöder de metoder som inte är kursiverade nedan:
 
+* Utsnitt (fullständig, kvadratisk, x/y/bredd/höjd, *procent x/y/bredd/höjd*) 
+* Skalning (max, bredd, höjd, bredd & höjd, *bredd/höjd med uppskalning*, *bredd/höjd med begränsning*)
+* Rotation (0, "rotationBy90s", *godtycklig*, spegelvändning)
+* Färgkvalitet (original, *färg*, *gråskala*, *bitonal*)
+* Bildformat (jpeg, *png*, *tif*, *gif*, *pdf*, *jp2*, *webp*)
 
 ## IIIF Presentation
 
