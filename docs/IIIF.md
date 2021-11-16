@@ -14,5 +14,35 @@ Image-APIet har metoder för att bearbeta källbilder. Riksarkivets IIIF-tjänst
 * Färgkvalitet (original, *färg*, *gråskala*, *bitonal*)
 * Bildformat (jpeg, *png*, *tif*, *gif*, *pdf*, *jp2*, *webp*)
 
+Riksarkivets IIIF-tjänst stöder även IIIF Image 2.0, t.ex. för användning i bildvisare som inte stöder IIIF Image 3.0, som [Universal Viewer](https://universalviewer.io/).
+
+### Version 3.0
+
+https://lbiiif.riksarkivet.se/{bild-id}/{region}/{storlek}/{rotation}/{färgmodell}.jpg
+https://lbiiif.riksarkivet.se/v3/{bild-id}/{region}/{storlek}/{rotation}/{färgmodell}.jpg
+
+För en fullständig beskrivning av URI-syntax se [version 3.0](https://iiif.io/api/image/3.0/#4-image-requests)
+
+| Parameter  | Beskrivning |
+| -----------| ------------- |
+| region     | Önskat utsnitt av bilden: "*full*" eller "*x-start,y-start,bredd,höjd*"  |
+| storlek    | Önskad storlek i pixlar på bilden: "*max*", "*bredd, höjd*", "*bredd,*" eller "*,höjd*"  |
+| rotation   | Önskad rotation av bilden: "*0*", "*!0*", "*90*", "*!90*", "*180*", "*!180*", "*270*" eller "*!270*", där talet anger vinkel (i jämna 90-gradersintervall) och ! anger spegelvändning |
+| färgmodell | Tjänsten stöder endast "*default*" |
+
+### Version 2.0
+
+https://lbiiif.riksarkivet.se/v2/{bild-id}/{region}/{storlek}/{rotation}/{färgmodell}.jpg
+
+För en fullständig beskrivning av URI-syntax se [version 2.0](https://iiif.io/api/image/2.0/#image-request-parameters).
+
+| Parameter  | Beskrivning |
+| -----------| ------------- |
+| region     | Önskat utsnitt av bilden: "*full*" eller "*x-start,y-start,bredd,höjd*"  |
+| storlek    | Önskad storlek i pixlar på bilden: "*full*", "*bredd, höjd*", "*bredd,*" eller "*,höjd*"  |
+| rotation   | Önskad rotation av bilden: "*0*", "*!0*", "*90*", "*!90*", "*180*", "*!180*", "*270*" eller "*!270*", där talet anger vinkel (i jämna 90-gradersintervall) och ! anger spegelvändning |
+| färgmodell | Tjänsten stöder endast "*default*" |
+
+
 ## IIIF Presentation
 
