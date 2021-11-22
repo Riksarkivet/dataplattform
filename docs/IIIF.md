@@ -54,7 +54,7 @@ Presentation-APIet servar *resurser* som gör det möjligt att presentera bilder
 Resuserna är [JSON-LD-dokument](https://json-ld.org/), dvs [RDF](https://www.w3.org/RDF/)-modeller, serialiserade i JSON-format. Det finns flera visningstillämpningar för IIIF-manifest, t.ex.
 
 * [Universal Viewer](https://universalviewer.io/)
-* [Mirador](https://projectmirador.org/]
+* [Mirador](https://projectmirador.org/)
 
 Presentation-APIet har en enkel URL-syntax.
 
