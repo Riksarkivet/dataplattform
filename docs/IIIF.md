@@ -46,3 +46,22 @@ För en fullständig beskrivning av URI-syntax se [version 2.0](https://iiif.io/
 
 ## IIIF Presentation
 
+Presentation-APIet servar *resurser* som gör det möjligt att presentera bilder och audiovisuella media (ljud och film) med tillhörande metadata i en klienttillämpning (webbsida, app, etc.) Det finns två typer av resurser på den yttersta nivån:
+
+* Manifest, som innehåller referenser till bilder/audiovisuella filer och metadata
+* Collection, som innehåller referenser till underliggande Collections och Manifest för en hierarkisk gruppering
+
+Resuserna är [JSON-LD-dokument](https://json-ld.org/), dvs [RDF](https://www.w3.org/RDF/)-modeller, serialiserade i JSON-format. Det finns flera visningstillämpningar för IIIF-manifest, t.ex.
+
+* [Universal Viewer](https://universalviewer.io/)
+* [Mirador](https://projectmirador.org/]
+
+Presentation-APIet har en enkel URL-syntax.
+
+### Manifest
+
+https://lbiiif.riksarkivet.se/{identifierare}/manifest
+
+### Collection
+
+https://lbiiif.riksarkivet.se/...
