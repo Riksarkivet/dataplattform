@@ -65,3 +65,5 @@ https://lbiiif.riksarkivet.se/{identifierare}/manifest
 ### Collection
 
 https://lbiiif.riksarkivet.se/...
+
+Presentationsresursernas innehåll och struktur finns beskrivna i [specifikation för Presentation API](https://iiif.io/api/presentation/3.0/).
