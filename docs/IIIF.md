@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet"></link>
+
 # IIIF
 
 Riksarkivet tillgängliggör publika digitiserade arkivhandlingar via IIIF (International Image Interoperability Framework). IIIF innehåller en serie protokoll för hantering och publicering av digitala bilder. Riksarkivet stöder [IIIF Image 3.0](https://iiif.io/api/image/3.0/) och [IIIF Image 2.0](https://iiif.io/api/image/2.0/) för bildhantering och [IIIF Presentation 3.0](https://iiif.io/api/presentation/3.0/) för presentation. Utöver dessa finns [IIIF Authentication 1.0](https://iiif.io/api/auth/1.0/) för autenticering av bildresurser, [IIIF Search 1.0](https://iiif.io/api/search/1.0/) för sökning inom IIIF-resurser och [IIIF Change Discovery 1.0](https://iiif.io/api/discovery/1.0/) för publicering av ändringar i IIIF-resurser.
@@ -64,6 +66,60 @@ https://lbiiif.riksarkivet.se/{identifierare}/manifest
 
 ### Collection
 
-https://lbiiif.riksarkivet.se/...
+Riksarkivet tillhandahåller en Collection-struktur för att externa klienter skall kunna bläddra sig fram till manifesten.
+
+https://lbiiif.riksarkivet.se/collection/riksarkivet
+
+Collection på toppnivån innehåller referenser till följande parallella sorteringar/hierarkier:
+
+<details>
+  <summary>Ämnesområde - https://lbiiif.riksarkivet.se/collection/amnesomrade</summary>
+  <dl>
+    <dt>Brott och straff</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/brott-och-straff</dd>
+    <dt>Emigration</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/emigration</dd>
+    <dt>Fastigheter och gårdar</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/fastigheter-och-gardar</dd>
+    <dt>Fotografier</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/fotografier</dd>
+    <dt>Gästgiveri och skjutsväsen</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/gastgiveri-och-skjutsvasen</dd>
+    <dt>Heraldik</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/heraldik</dd>
+    <dt>Idrott</dt>
+    <dd>https://lbiiif.riksarkivet.se/collection/idrott</dd>
+    <dt>Kartor och ritningar</dt>
+    <dd>
+      <details>
+        <summary>https://lbiiif.riksarkivet.se/collection/kartor-och-ritningar</summary>
+        <dl style="margin-left: 2em">
+          <dt>Sverige, topografiska kartor</dt>
+          <dd>https://lbiiif.riksarkivet.se/collection/arkiv/lfn58fOxfKgkoC3yNOpse7</dd>
+        </dl>
+      </details>
+    </dd>
+  </dl>
+</details>
+<hr>
+
+<details>
+  <summary>Register - https://lbiiif.riksarkivet.se/collection/register</summary>
+</details>
+<hr>
+
+<details>
+  <summary>Arkivinstitution - https://lbiiif.riksarkivet.se/collection/arkivinstitution</summary>
+</details>
+<hr>
+
+<details>
+  <summary>Ort - https://lbiiif.riksarkivet.se/collection/ort</summary>
+</details>
+<hr>
+
+<details>
+  <summary>Tid - https://lbiiif.riksarkivet.se/collection/tid</summary>
+</details>
 
 Presentationsresursernas innehåll och struktur finns beskrivna i [specifikation för Presentation API](https://iiif.io/api/presentation/3.0/).
