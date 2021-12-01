@@ -1,5 +1,3 @@
-<link href="style.css" rel="stylesheet"></link>
-
 # IIIF
 
 Riksarkivet tillgängliggör publika digitiserade arkivhandlingar via IIIF (International Image Interoperability Framework). IIIF innehåller en serie protokoll för hantering och publicering av digitala bilder. Riksarkivet stöder [IIIF Image 3.0](https://iiif.io/api/image/3.0/) och [IIIF Image 2.0](https://iiif.io/api/image/2.0/) för bildhantering och [IIIF Presentation 3.0](https://iiif.io/api/presentation/3.0/) för presentation. Utöver dessa finns [IIIF Authentication 1.0](https://iiif.io/api/auth/1.0/) för autenticering av bildresurser, [IIIF Search 1.0](https://iiif.io/api/search/1.0/) för sökning inom IIIF-resurser och [IIIF Change Discovery 1.0](https://iiif.io/api/discovery/1.0/) för publicering av ändringar i IIIF-resurser.
