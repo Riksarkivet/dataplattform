@@ -130,6 +130,8 @@ Collection på toppnivån innehåller referenser till följande parallella sorte
   <summary><strong>Tid</strong> - https://lbiiif.riksarkivet.se/collection/tid</summary>
 </details>
 
+#### Interna referenser
+
 På nedersta nivå, som normalt motsvarar arkivenheter av typen **serie**, innehåller en Collection referenser till Manifest, som normalt motsvarar arkivenheter av typen **volym**. Interna referenser, **Se:** i Riksarkivets söktjänst, till volymer i andra serier är inkluderade i **items**-listan om de hänvisar inom samma arkiv. Referenser till volymer i andra arkiv visas i söktjänsten men följer inte med i IIIF Collections på grund av tekniska begränsningar.
 
 Presentationsresursernas innehåll och struktur finns beskrivna i [specifikation för Presentation API](https://iiif.io/api/presentation/3.0/).
