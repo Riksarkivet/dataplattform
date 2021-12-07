@@ -71,7 +71,7 @@ https://lbiiif.riksarkivet.se/collection/riksarkivet
 Collection på toppnivån innehåller referenser till följande parallella sorteringar/hierarkier:
 
 <details>
-  <summary>Ämnesområde - https://lbiiif.riksarkivet.se/collection/amnesomrade</summary>
+  <summary><strong>Ämnesområde</strong> - https://lbiiif.riksarkivet.se/collection/amnesomrade</summary>
   <dl>
     <dt>Brott och straff</dt>
     <dd>https://lbiiif.riksarkivet.se/collection/brott-och-straff</dd>
@@ -91,7 +91,17 @@ Collection på toppnivån innehåller referenser till följande parallella sorte
     <dd>
       <details>
         <summary>https://lbiiif.riksarkivet.se/collection/kartor-och-ritningar</summary>
-        <dl style="margin-left: 2em">
+        <dl>
+          <dt>Brandförsäkringar – kartor</dt>
+          <dd>https://lbiiif.riksarkivet.se/collection/brandforsakringar-kartor</dd>
+          <dt>Diplomatica. Kartor och ritningar</dt>
+          <dd>1500-tal till 1794. https://lbiiif.riksarkivet.se/collection/arkiv/pZdxhTy01Y7BRBFEIaUwL4</dd>
+          <dt>Domänverkets kartsamling över revir och kronoparker</dt>
+          <dd>Kartor och kartregister. https://lbiiif.riksarkivet.se/collection/arkiv/ZR1dv5Xzvg3GO3dGz6fm00</dd>
+          <dt>Fredrik Adolf Wiblingens samling</dt>
+          <dd>Små stadskartor. https://lbiiif.riksarkivet.se/collection/arkiv/T1ICyyONGT0XTwKZYqff57</dd>
+          <dt>Handritade Kartverk</dt>
+          <dd>https://lbiiif.riksarkivet.se/collection/arkiv/AwBKLPUAqqUGtNLGHo3lq0</dd>
           <dt>Sverige, topografiska kartor</dt>
           <dd>https://lbiiif.riksarkivet.se/collection/arkiv/lfn58fOxfKgkoC3yNOpse7</dd>
         </dl>
@@ -102,22 +112,24 @@ Collection på toppnivån innehåller referenser till följande parallella sorte
 <hr>
 
 <details>
-  <summary>Register - https://lbiiif.riksarkivet.se/collection/register</summary>
+  <summary><strong>Register</strong> - https://lbiiif.riksarkivet.se/collection/register</summary>
 </details>
 <hr>
 
 <details>
-  <summary>Arkivinstitution - https://lbiiif.riksarkivet.se/collection/arkivinstitution</summary>
+  <summary><strong>Arkivinstitution</strong> - https://lbiiif.riksarkivet.se/collection/arkivinstitution</summary>
 </details>
 <hr>
 
 <details>
-  <summary>Ort - https://lbiiif.riksarkivet.se/collection/ort</summary>
+  <summary><strong>Ort</strong> - https://lbiiif.riksarkivet.se/collection/ort</summary>
 </details>
 <hr>
 
 <details>
-  <summary>Tid - https://lbiiif.riksarkivet.se/collection/tid</summary>
+  <summary><strong>Tid</strong> - https://lbiiif.riksarkivet.se/collection/tid</summary>
 </details>
+
+På nedersta nivå, som normalt motsvarar arkivenheter av typen **serie**, innehåller en Collection referenser till Manifest, som normalt motsvarar arkivenheter av typen **volym**. Interna referenser, **Se:** i Riksarkivets söktjänst, till volymer i andra serier är inkluderade i **items**-listan om de hänvisar inom samma arkiv. Referenser till volymer i andra arkiv visas i söktjänsten men följer inte med i IIIF Collections på grund av tekniska begränsningar.
 
 Presentationsresursernas innehåll och struktur finns beskrivna i [specifikation för Presentation API](https://iiif.io/api/presentation/3.0/).
