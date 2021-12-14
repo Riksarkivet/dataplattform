@@ -77,3 +77,8 @@ t.ex.
 https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier=SE/ULA/10012&metadataPrefix=oai_ape_ead
 
 Svaret innehåller fullständiga data för en post i angivet dataformat (apeEAD eller RA-EAD).
+
+Beskrivning av EAD-data för arkivenheter:
+
+* [Riksarkivets EAD](RA-EAD.md)
+* [APE-EAD](APE-EAD.md)
