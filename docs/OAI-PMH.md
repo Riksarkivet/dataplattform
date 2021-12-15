@@ -84,7 +84,7 @@ Exempel:
 
 https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier=SE/ULA/10012/A+1&metadataPrefix=oai_ape_ead
 
-Svaret innehåller fullständiga data för en post i angivet dataformat (apeEAD eller RA-EAD).
+Svaret innehåller fullständiga data för en post i angivet dataformat (apeEAD eller RA-EAD). [EAD (Encoded Archival Description)](https://www.loc.gov/ead/) är ett standardiserat XML-format för överföring av arkivinformation. Riksarkivets OAI-PMH-tjänst kan som beskrivs ovan leverera data i två olika EAD-baserade format.
 
 Beskrivning av EAD-data för arkivenheter:
 
