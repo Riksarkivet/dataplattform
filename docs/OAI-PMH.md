@@ -78,7 +78,7 @@ där **metadata-prefix** skall vara en av
 * **SE/ULA/10012/A 1** - Husförhörslängder (serie)
 * **SE/ULA/10012/A 1/1** - 1752 - 1764 (volym)
 
-Observera att om identifieraren innehåller mellanslag " " så ska dessa URL-kodas med **+** (inte **%20**).
+Observera att om identifieraren innehåller mellanslag " " så ska dessa URL-kodas med **"+"** (inte **"%20"**).
 
 Exempel:
 
