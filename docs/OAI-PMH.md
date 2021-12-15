@@ -72,9 +72,17 @@ där **metadata-prefix** skall vara en av
 |oai_ape_ead|EAD XML, anpassning för APE        |
 |oai_ra_ead |EAD XML, anpassning för Riksarkivet|
 
-t.ex.
+**identifier** är Riksarkivets *referenskod*, t.ex. 
 
-https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier=SE/ULA/10012&metadataPrefix=oai_ape_ead
+* **SE/ULA/10012** - Alunda kyrkoarkiv (arkiv)
+* **SE/ULA/10012/A 1** - Husförhörslängder (serie)
+* **SE/ULA/10012/A 1/1** - 1752 - 1764 (volym)
+
+Observera att om identifieraren innehåller mellanslag " " så ska dessa URL-kodas med **+** (inte **%20**).
+
+Exempel:
+
+https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier=SE/ULA/10012/A+1&metadataPrefix=oai_ape_ead
 
 Svaret innehåller fullständiga data för en post i angivet dataformat (apeEAD eller RA-EAD).
 
