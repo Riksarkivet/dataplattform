@@ -10,6 +10,21 @@ Hur dataelement i EAD-filen motsvarar presentationen i söktjänsten.
 
 [Exempelfil 2 (SE/KrA/0414/0028/0006)](examples/data/ra-ead-volym-se-kra-0414-0028-0006.xml)
 
+### Titel
+
+    <filedesc>
+      <titlestmt>
+        <titleproper>5. Mariaeburgum. Ichnographice De Scriptum. A 1639. Tabula Explicans. [Marienburg/Malbork]</titleproper>
+      </titlestmt>
+    </filedesc>
+
+och
+
+    <did>
+      <unittitle>5. Mariaeburgum. Ichnographice De Scriptum. A 1639. Tabula Explicans. [Marienburg/Malbork]</unittitle>
+      ...
+    </did
+
 ### Referenskod
 
     <eadheader ...>
@@ -30,6 +45,12 @@ Dvs, did/unitid innehåller referenskoden i originalformat.
       </p>
     </otherfindaid>
   
+### Omfång
+      
+    <physdesc encodinganalog="3.4.4">
+      <extent unit="Kartor">1</extent>
+    </physdesc>
+      
 ### Datering
  
     <did>
@@ -47,38 +68,50 @@ unitdate-elementets textinnehåll är ustrukturerat, där kan förekomma kvalifi
 ### Arkivinstitution
 
 Referenskodens två första element anger arkivinstitution. I exemplet är det **SE/ULA** = Landsarkivet i Uppsala.
+      
+### Arkivbildare/upphov
+      
+    <origination encodinganalog="3.2.1">
+      <name authfilenumber="SE/902002">Lokal upphovsman KARTIA (KrA) - Getkant, Friedrich</name>
+    </origination>
         
 ### Bildvisningslänk
         
-		<did>
-			...
-			<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002787?partner=ape" />
-			<dao xlink:role="MANIFEST" xlink:href="https://lbiiif-acc.riksarkivet.se/arkis!C0002787/manifest" xlink:title="manifest" />
-			<dao xlink:role="SERVICE" xlink:href="https://lbiiif-acc.riksarkivet.se" xlink:title="service" xlink:arcrole="https://iiif.io/api/image/3/level1.json" />
-		</did>
+    <did>
+      ...
+      <dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002787?partner=ape" />
+      <dao xlink:role="MANIFEST" xlink:href="https://lbiiif-acc.riksarkivet.se/arkis!C0002787/manifest" xlink:title="manifest" />
+      <dao xlink:role="SERVICE" xlink:href="https://lbiiif-acc.riksarkivet.se" xlink:title="service" xlink:arcrole="https://iiif.io/api/image/3/level1.json" />
+    </did>
         
 ### Allmän anmärkning
         
     <scopecontent encodinganalog="summary">
-			<p>Med ortregister. Innehåller även längder över utflyttat tjänstefolk 1765-1771, 1773-1775 och uppbördslängd över "Åhrliga Påskepenningar af Alunda Sockns Ordinaira Soldater" 1753-1766.</p>
+      <p>Med ortregister. Innehåller även längder över utflyttat tjänstefolk 1765-1771, 1773-1775 och uppbördslängd över "Åhrliga Påskepenningar af Alunda Sockns Ordinaira Soldater" 1753-1766.</p>
     </scopecontent>
         
 ### Rättighetsmärkning
         
     <userestrict encodinganalog="3.4.5" type="dao">
-			<p>
-				<extref xlink:href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</extref>
-			</p>
+      <p>
+        <extref xlink:href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</extref>
+      </p>
     </userestrict>
+      
+### Repr. anm.
+      
+    <altformavail>
+      <p>Mediatyp enligt Kartia: Mikrofilm Mediatyp enligt Kartia: K 011 Mediatyp enligt Kartia: 471 </p>
+    </altformavail>
 
 ### Senast ändrad
         
     <revisiondesc>
-			...
-			<change>
-				<date calendar="gregorian" era="ce">2021-11-18T13:53:13.173Z</date>
-				<item>Senaste uppdatering i Arkis</item>
-			</change>
+      ...
+      <change>
+        <date calendar="gregorian" era="ce">2021-11-18T13:53:13.173Z</date>
+        <item>Senaste uppdatering i Arkis</item>
+      </change>
     </revisiondesc>
 
 
