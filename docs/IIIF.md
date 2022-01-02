@@ -88,25 +88,7 @@ Collection på toppnivån innehåller referenser till följande parallella sorte
     <dt>Idrott</dt>
     <dd>https://lbiiif.riksarkivet.se/collection/idrott</dd>
     <dt>Kartor och ritningar</dt>
-    <dd>
-      <details>
-        <summary>https://lbiiif.riksarkivet.se/collection/kartor-och-ritningar</summary>
-        <dl>
-          <dt>Brandförsäkringar – kartor</dt>
-          <dd>https://lbiiif.riksarkivet.se/collection/brandforsakringar-kartor</dd>
-          <dt>Diplomatica. Kartor och ritningar</dt>
-          <dd>1500-tal till 1794. https://lbiiif.riksarkivet.se/collection/arkiv/pZdxhTy01Y7BRBFEIaUwL4</dd>
-          <dt>Domänverkets kartsamling över revir och kronoparker</dt>
-          <dd>Kartor och kartregister. https://lbiiif.riksarkivet.se/collection/arkiv/ZR1dv5Xzvg3GO3dGz6fm00</dd>
-          <dt>Fredrik Adolf Wiblingens samling</dt>
-          <dd>Små stadskartor. https://lbiiif.riksarkivet.se/collection/arkiv/T1ICyyONGT0XTwKZYqff57</dd>
-          <dt>Handritade Kartverk</dt>
-          <dd>https://lbiiif.riksarkivet.se/collection/arkiv/AwBKLPUAqqUGtNLGHo3lq0</dd>
-          <dt>Sverige, topografiska kartor</dt>
-          <dd>https://lbiiif.riksarkivet.se/collection/arkiv/lfn58fOxfKgkoC3yNOpse7</dd>
-        </dl>
-      </details>
-    </dd>
+    <dd>https://lbiiif.riksarkivet.se/collection/kartor-och-ritningar</dd>
   </dl>
 </details>
 <hr>
