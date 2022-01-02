@@ -147,3 +147,43 @@ EAD-data för en serie har samma grundläggande uppbyggnad som för en volym. Da
     </c>
 
 ## Arkiv
+
+[Exempelfil (SE/ULA/10012)](examples/data/ra-ead-arkiv.xml)
+
+EAD-data för ett arkiv följer också samma grunläggande mönster. Serier i arkivet finns som element nästade under 
+        
+    <dsc type="othertype">
+      ...
+    </dsc>
+       
+### Nästade serie-element
+      
+Notera att volymerna i sin tur är nästade i serie-elementen.
+      
+    <c level="series" id="d2e101">
+      <did>
+        <unitid countrycode="SE" repositorycode="ULA">A I</unitid>
+        <unittitle>Husförhörslängder</unittitle>
+      </did>
+      <accessrestrict type="Delvis">
+        <note>
+          <p>Delvis</p>
+        </note>
+      </accessrestrict>
+      <c level="otherlevel" otherlevel="volym" id="d2e102">
+        <did>
+          <unitid countrycode="SE" repositorycode="ULA">2</unitid>
+          <unitdate type="inclusive">1772--1778</unitdate>
+        </did>
+        <odd>
+          <p>Med ortregister.</p>
+        </odd>
+        <accessrestrict type="Delvis">
+          <note>
+            <p>Delvis</p>
+          </note>
+        </accessrestrict>
+      </c>
+      ...
+    </c>
+      
