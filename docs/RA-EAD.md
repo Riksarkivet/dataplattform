@@ -114,7 +114,36 @@ Referenskodens två första element anger arkivinstitution. I exemplet är det *
       </change>
     </revisiondesc>
 
-
 ## Serie
+
+[Exempelfil (SE/ULA/10012/A I)](examples/data/ra-ead-serie.xml)
+
+EAD-data för en serie har samma grundläggande uppbyggnad som för en volym. Data för volymerna i serien finns sedan som element nästade under 
+        
+    <dsc type="othertype">
+      ...
+    </dsc>
+        
+### Nästade volym-element
+        
+    <c level="otherlevel" otherlevel="volym" id="d2e101" encodinganalog="3.1.4">
+      <did>
+        <unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/2</unitid>
+        <unittitle>1772--1778</unittitle>
+        <unitdate calendar="gregorian" era="ce" normal="1772/1778" encodinganalog="3.1.3">1772--1778</unitdate>
+        <dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002788?partner=ape" />
+      </did>
+      <scopecontent encodinganalog="summary">
+        <p>Med ortregister.</p>
+      </scopecontent>
+      <accessrestrict encodinganalog="3.4.1">
+        <p>Delvis</p>
+      </accessrestrict>
+      <otherfindaid encodinganalog="3.4.5">
+        <p>
+        <extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
+        </p>
+      </otherfindaid>
+    </c>
 
 ## Arkiv
