@@ -1,6 +1,6 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-	<responseDate>2021-12-15T12:28:09.8997579Z</responseDate>
-	<request verb="GetRecord" identifier="SE/ULA/10012/A I" metadataPrefix="oai_ape_ead">https://oai-pmh-acc.riksarkivet.se/OAI/SE_ULA</request>
+	<responseDate>2022-01-03T18:08:17.8162564Z</responseDate>
+	<request verb="GetRecord" identifier="SE/ULA/10012/A I" metadataPrefix="oai_ra_ead">https://oai-pmh-acc.riksarkivet.se/OAI/</request>
 	<GetRecord>
 		<record>
 			<header>
@@ -9,9 +9,9 @@
 				<setSpec>SE_ULA_10012_A+I</setSpec>
 			</header>
 			<metadata>
-				<ead xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.archivesportaleurope.net/Portal/profiles/apeEAD.xsd">
+				<ead xmlns:xlink="http://xml.ra.se/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.ra.se/EAD" xsi:schemaLocation="http://xml.ra.se/EAD http://xml.ra.se/EAD/RA_EAD.xsd">
 					<eadheader langencoding="iso639-2b" dateencoding="iso8601" countryencoding="iso3166-1">
-						<eadid countrycode="SE" mainagencycode="SE-ULA" identifier="SE-ULA-10012-A I">SE/ULA/10012/AI</eadid>
+						<eadid countrycode="SE" mainagencycode="ULA">SE/ULA/10012/AI</eadid>
 						<filedesc>
 							<titlestmt>
 								<titleproper>Husförhörslängder</titleproper>
@@ -22,7 +22,7 @@
 						</profiledesc>
 						<revisiondesc>
 							<change>
-								<date calendar="gregorian" era="ce">2021-12-15T12:28:09.933Z</date>
+								<date calendar="gregorian" era="ce">2022-01-03T18:08:17.825Z</date>
 								<item>Informationen kopierad ur Arkis</item>
 							</change>
 							<change>
@@ -31,634 +31,469 @@
 							</change>
 						</revisiondesc>
 					</eadheader>
-					<archdesc level="fonds" type="inventory" encodinganalog="3.1.4" relatedencoding="ISAD(G)v2">
+					<archdesc level="fonds">
 						<did>
-							<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I</unitid>
+							<unitid countrycode="SE" repositorycode="ULA">A I</unitid>
 							<unittitle>Husförhörslängder</unittitle>
 						</did>
-						<accessrestrict encodinganalog="3.4.1">
-							<p>Delvis</p>
+						<accessrestrict type="Delvis">
+							<note>
+								<p>Delvis</p>
+							</note>
 						</accessrestrict>
-						<otherfindaid encodinganalog="3.4.5">
-							<p>
-								<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/F53e2TT9rH6cxG02H087k3">Post i NAD</extref>
-							</p>
-						</otherfindaid>
 						<dsc type="othertype">
-							<c level="otherlevel" otherlevel="volym" id="d2e101" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e101">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/2</unitid>
-									<unittitle>1772--1778</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1772/1778" encodinganalog="3.1.3">1772--1778</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002788?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">2</unitid>
+									<unitdate type="inclusive">1772--1778</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e102" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e102">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/3</unitid>
-									<unittitle>1779--1785</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1779/1785" encodinganalog="3.1.3">1779--1785</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002789?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">3</unitid>
+									<unitdate type="inclusive">1779--1785</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e103" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e103">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/4</unitid>
-									<unittitle>1786--1792</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1786/1792" encodinganalog="3.1.3">1786--1792</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002790?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">4</unitid>
+									<unitdate type="inclusive">1786--1792</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e104" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e104">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/5a</unitid>
-									<unittitle>1793--1799</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1793/1799" encodinganalog="3.1.3">1793--1799</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002791?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">5a</unitid>
+									<unitdate type="inclusive">1793--1799</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Löddby åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/56gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e105" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e105">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/5b</unitid>
-									<unittitle>1793--1799</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1793/1799" encodinganalog="3.1.3">1793--1799</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002792?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">5b</unitid>
+									<unitdate type="inclusive">1793--1799</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lövsta och Garbo åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/5MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e106" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e106">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/6a</unitid>
-									<unittitle>1800--1806</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1800/1806" encodinganalog="3.1.3">1800--1806</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002793?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">6a</unitid>
+									<unitdate type="inclusive">1800--1806</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ort- och soldatregister. Lång och Löddby åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/5cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e107" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e107">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/6b</unitid>
-									<unittitle>1800--1806</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1800/1806" encodinganalog="3.1.3">1800--1806</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002794?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">6b</unitid>
+									<unitdate type="inclusive">1800--1806</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ort- och soldatregister. Lövsta och Garbo åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/5sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e108" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e108">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/7a</unitid>
-									<unittitle>1807--1814</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1807/1814" encodinganalog="3.1.3">1807--1814</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002795?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">7a</unitid>
+									<unitdate type="inclusive">1807--1814</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Löddby åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/66gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e109" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e109">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/7b</unitid>
-									<unittitle>1807--1814</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1807/1814" encodinganalog="3.1.3">1807--1814</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002796?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">7b</unitid>
+									<unitdate type="inclusive">1807--1814</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lövsta och Garbo åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/6MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e110" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e110">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/8a</unitid>
-									<unittitle>1814--1821</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1814/1821" encodinganalog="3.1.3">1814--1821</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002797?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">8a</unitid>
+									<unitdate type="inclusive">1814--1821</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Löddby åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/6cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e111" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e111">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/8b</unitid>
-									<unittitle>1814--1821</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1814/1821" encodinganalog="3.1.3">1814--1821</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002798?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">8b</unitid>
+									<unitdate type="inclusive">1814--1821</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lövsta och Garbo åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/6sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e112" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e112">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/9</unitid>
-									<unittitle>1821--1827</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1821/1827" encodinganalog="3.1.3">1821--1827</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002799?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">9</unitid>
+									<unitdate type="inclusive">1821--1827</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ort- och soldatregister.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/76gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e113" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e113">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/10</unitid>
-									<unittitle>1828--1834</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1828/1834" encodinganalog="3.1.3">1828--1834</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002800?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">10</unitid>
+									<unitdate type="inclusive">1828--1834</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över soldater och hantverkare. I två fall har uppgifterna om husförhör och nattvardsgång fördelats mellan den ursprungliga högersidan av uppslaget (fol. 298r, resp. 344r) med anteckningar för åren 1828-1832 och första sidan av ett därförut senare insatt blad (fol. 297 ½, resp. 343 ½), anteckningar för åren 1833-1834. Uppgifterna på den ursprungliga högersidan i årtalskolumnerna 1833-1834 gälla de dessa år nyinflyttade personer, som förtecknats på de nyinsatta bladen. Innehåller även avlösningslängd 1789-1834, avkortningslängd över personer med minderåriga barn 1829-1831 och längd över avskedade soldater som njuta underhåll 1830-1832.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/7MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e114" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e114">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/11</unitid>
-									<unittitle>1835--1839</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1835/1839" encodinganalog="3.1.3">1835--1839</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002801?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">11</unitid>
+									<unitdate type="inclusive">1835--1839</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över soldater och hantverkare. Flerstädes har uppgifterna om husförhör och nattvardsgång fördelats mellan den ursprungliga högersidan (med anteckningar för åren 1835-1837) och första sidan av ett därförut senare insatt ark, numrerat 25 ½, 53 ½ etc (med anteckningar för åren 1837-1839). På innersidorna av dessa nyinsatta ark har i ett par fall (fol. 334 ½ och fol. 396 ½) förtecknats 1837-1838 inflyttade personer med tillhörande uppgifter om husförhör och nattvardsgång. Innehåller även avlösningslängd 1835-1840.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/7cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e115" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e115">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/12</unitid>
-									<unittitle>1839--1844</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1839/1844" encodinganalog="3.1.3">1839--1844</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002802?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">12</unitid>
+									<unitdate type="inclusive">1839--1844</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över soldater och hantverkare. Innehåller även avlösningslängd 1841-1844.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/7sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e116" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e116">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/13a</unitid>
-									<unittitle>1845--1850</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1845/1850" encodinganalog="3.1.3">1845--1850</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002803?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">13a</unitid>
+									<unitdate type="inclusive">1845--1850</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ort- och soldatregister. Löddby och Lövsta åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/86gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e117" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e117">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/13b</unitid>
-									<unittitle>1845--1850</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1845/1850" encodinganalog="3.1.3">1845--1850</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002804?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">13b</unitid>
+									<unitdate type="inclusive">1845--1850</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Garbo åttingar. Innehåller även avlösningslängd 1845-1850.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/8MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e118" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e118">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/14a</unitid>
-									<unittitle>1851--1855</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1851/1855" encodinganalog="3.1.3">1851--1855</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002805?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">14a</unitid>
+									<unitdate type="inclusive">1851--1855</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över barnhusbarn. Soldatregister Löddby och Lövsta åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/8cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e119" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e119">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/14b</unitid>
-									<unittitle>1851--1855</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1851/1855" encodinganalog="3.1.3">1851--1855</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002806?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">14b</unitid>
+									<unitdate type="inclusive">1851--1855</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över barnhusbarn. Lång och Garbo åttingar. Innehåller även avlösningslängd 1851-1854.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/8sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e120" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e120">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/15a</unitid>
-									<unittitle>1856--1860</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1856/1860" encodinganalog="3.1.3">1856--1860</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002807?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">15a</unitid>
+									<unitdate type="inclusive">1856--1860</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över barnhusbarn. Löddby och Lövsta åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/96gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e121" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e121">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/15b</unitid>
-									<unittitle>1856--1860</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1856/1860" encodinganalog="3.1.3">1856--1860</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002808?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">15b</unitid>
+									<unitdate type="inclusive">1856--1860</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister och register över barnhusbarn. Lång och Garbo åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/9MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e122" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e122">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/16</unitid>
-									<unittitle>1861--1865</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1861/1865" encodinganalog="3.1.3">1861--1865</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002809?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">16</unitid>
+									<unitdate type="inclusive">1861--1865</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Löddby och Lövsta åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/9cgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e123" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e123">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/17</unitid>
-									<unittitle>1861--1865</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1861/1865" encodinganalog="3.1.3">1861--1865</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002810?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">17</unitid>
+									<unitdate type="inclusive">1861--1865</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Garbo åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/9sgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e124" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e124">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/18</unitid>
-									<unittitle>1866--1870</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1866/1870" encodinganalog="3.1.3">1866--1870</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002811?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">18</unitid>
+									<unitdate type="inclusive">1866--1870</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Löddby och Lövsta åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/A6gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e125" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e125">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/19</unitid>
-									<unittitle>1866--1870</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1866/1870" encodinganalog="3.1.3">1866--1870</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002812?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">19</unitid>
+									<unitdate type="inclusive">1866--1870</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Garbo åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/AMgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e126" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e126">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/20</unitid>
-									<unittitle>1871--1875</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1871/1875" encodinganalog="3.1.3">1871--1875</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002813?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">20</unitid>
+									<unitdate type="inclusive">1871--1875</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Löddby och Lövsta åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/AcgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e127" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e127">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/21</unitid>
-									<unittitle>1871--1875</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1871/1875" encodinganalog="3.1.3">1871--1875</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002814?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">21</unitid>
+									<unitdate type="inclusive">1871--1875</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Garbo åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/AsgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e128" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e128">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/22</unitid>
-									<unittitle>1876--1885</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1876/1885" encodinganalog="3.1.3">1876--1885</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002815?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">22</unitid>
+									<unitdate type="inclusive">1876--1885</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Löddby och Lövsta åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/B6gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e129" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e129">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/23</unitid>
-									<unittitle>1876--1885</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1876/1885" encodinganalog="3.1.3">1876--1885</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002816?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">23</unitid>
+									<unitdate type="inclusive">1876--1885</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång coh Garbo åttingar. Med förteckning över personer med okänd vistelseort.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/BMgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e130" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e130">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/24</unitid>
-									<unittitle>1886--1895</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1886/1895" encodinganalog="3.1.3">1886--1895</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002817?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">24</unitid>
+									<unitdate type="inclusive">1886--1895</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Löddby och Lövsta åttingar.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/BcgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e131" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e131">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/25</unitid>
-									<unittitle>1886--1895</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1886/1895" encodinganalog="3.1.3">1886--1895</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002818?partner=ape" />
+									<unitid countrycode="SE" repositorycode="ULA">25</unitid>
+									<unitdate type="inclusive">1886--1895</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Lång och Garbo åttingar. Med förteckning över personer med okänd vistelseort. Serien avslutad. Se vidare serien A II a.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/BsgUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
-							<c level="otherlevel" otherlevel="volym" id="d2e132" encodinganalog="3.1.4">
+							<c level="otherlevel" otherlevel="volym" id="d2e132">
 								<did>
-									<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/1</unitid>
-									<unittitle>1752--1764</unittitle>
-									<unitdate calendar="gregorian" era="ce" normal="1752/1764" encodinganalog="3.1.3">1752--1764</unitdate>
-									<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002787?partner=ape" />
-									<dao xlink:role="MANIFEST" xlink:href="https://lbiiif-acc.riksarkivet.se/arkis!C0002787/manifest" xlink:title="manifest" />
-									<dao xlink:role="SERVICE" xlink:href="https://lbiiif-acc.riksarkivet.se" xlink:title="service" xlink:arcrole="https://iiif.io/api/image/3/level1.json" />
+									<unitid countrycode="SE" repositorycode="ULA">1</unitid>
+									<unitdate type="inclusive">1752--1764</unitdate>
 								</did>
-								<scopecontent encodinganalog="summary">
+								<odd>
 									<p>Med ortregister. Innehåller även längder över utflyttat tjänstefolk 1765-1771, 1773-1775 och uppbördslängd över "Åhrliga Påskepenningar af Alunda Sockns Ordinaira Soldater" 1753-1766.</p>
-								</scopecontent>
-								<accessrestrict encodinganalog="3.4.1">
-									<p>Delvis</p>
+								</odd>
+								<accessrestrict type="Delvis">
+									<note>
+										<p>Delvis</p>
+									</note>
 								</accessrestrict>
-								<userestrict encodinganalog="3.4.5" type="dao">
-									<p>
-										<extref xlink:href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</extref>
-									</p>
+								<userestrict type="dao">
+									<note>
+										<p />
+									</note>
 								</userestrict>
-								<otherfindaid encodinganalog="3.4.5">
-									<p>
-										<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/46gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-									</p>
-								</otherfindaid>
 							</c>
 						</dsc>
 					</archdesc>
