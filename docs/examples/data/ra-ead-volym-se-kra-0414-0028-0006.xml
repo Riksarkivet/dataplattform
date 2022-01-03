@@ -1,6 +1,6 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
 	<responseDate>2021-12-15T12:55:15.3427536Z</responseDate>
-	<request verb="GetRecord" identifier="SE/KrA/0414/0028/0006" metadataPrefix="oai_ape_ead">https://oai-pmh-acc.riksarkivet.se/OAI/SE_ULA</request>
+	<request verb="GetRecord" identifier="SE/KrA/0414/0028/0006" metadataPrefix="oai_ape_ead">https://oai-pmh.riksarkivet.se/OAI/</request>
 	<GetRecord>
 		<record>
 			<header>

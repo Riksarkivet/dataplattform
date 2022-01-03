@@ -1,0 +1,58 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+	<responseDate>2022-01-03T17:59:58.5930307Z</responseDate>
+	<request verb="GetRecord" identifier="SE/ULA/10012/A I/2" metadataPrefix="oai_ape_ead">https://oai-pmh.riksarkivet.se/OAI/</request>
+	<GetRecord>
+		<record>
+			<header>
+				<identifier>SE/ULA/10012/A I/2</identifier>
+				<datestamp>2006-11-08T23:00:00.000Z</datestamp>
+				<setSpec>SE_ULA_10012_A+I_2</setSpec>
+			</header>
+			<metadata>
+				<ead xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.archivesportaleurope.net/Portal/profiles/apeEAD.xsd">
+					<eadheader langencoding="iso639-2b" dateencoding="iso8601" countryencoding="iso3166-1">
+						<eadid countrycode="SE" mainagencycode="SE-ULA" identifier="SE-ULA-10012-A I-2">SE/ULA/10012/AI/2</eadid>
+						<filedesc>
+							<titlestmt>
+								<titleproper />
+							</titlestmt>
+						</filedesc>
+						<profiledesc>
+							<creation>This document was generated automatically from data at Riksarkivet</creation>
+						</profiledesc>
+						<revisiondesc>
+							<change>
+								<date calendar="gregorian" era="ce">2022-01-03T17:59:58.700Z</date>
+								<item>Informationen kopierad ur Arkis</item>
+							</change>
+							<change>
+								<date calendar="gregorian" era="ce">2006-11-08T23:00:00.000Z</date>
+								<item>Senaste uppdatering i Arkis</item>
+							</change>
+						</revisiondesc>
+					</eadheader>
+					<archdesc level="fonds" type="inventory" encodinganalog="3.1.4" relatedencoding="ISAD(G)v2">
+						<did>
+							<unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/2</unitid>
+							<unittitle>1772--1778</unittitle>
+							<unitdate calendar="gregorian" era="ce" normal="1772/1778" encodinganalog="3.1.3">1772--1778</unitdate>
+							<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002788?partner=ape" />
+						</did>
+						<scopecontent encodinganalog="summary">
+							<p>Med ortregister.</p>
+						</scopecontent>
+						<accessrestrict encodinganalog="3.4.1">
+							<p>Delvis</p>
+						</accessrestrict>
+						<otherfindaid encodinganalog="3.4.5">
+							<p>
+								<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
+							</p>
+						</otherfindaid>
+						<dsc type="othertype" />
+					</archdesc>
+				</ead>
+			</metadata>
+		</record>
+	</GetRecord>
+</OAI-PMH>
