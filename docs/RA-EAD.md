@@ -28,12 +28,16 @@ och
 ### Referenskod
 
     <eadheader ...>
-      <eadid countrycode="SE" mainagencycode="SE-ULA" identifier="SE-ULA-10012-A I-1">SE/ULA/10012/AI/1</eadid>
+      <eadid countrycode="SE" mainagencycode="ULA">SE/ULA/10012/AI/1</eadid>
+      ...
+    </eadheader>
 
 Referenskoden är egentligen **SE/ULA/10012/A I/1**, mellanslaget försvinner i <eadid>-elementets innehåll. Notera också att attributen **mainagencycode** och **identifier** har en ganska strikt formatbegränsning, varför **"/"** i Riksarkivets referenskoder byts ut mot **"-"** i dessa.
 
     <did>
-      <unitid encodinganalog="3.1.1" type="call number">SE/ULA/10012/A I/1</unitid>
+      <unitid countrycode="SE" repositorycode="ULA">1</unitid>
+      ...
+    </did>
       
 Dvs, did/unitid innehåller referenskoden i originalformat.
   
