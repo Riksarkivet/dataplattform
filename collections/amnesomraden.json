@@ -1,0 +1,22 @@
+{
+    "@context": "{}",
+    "id": "{}",
+    "type": "Collection",
+    "label": {
+        "sv": "Ämnesområde",
+        "en": "Subject"
+    },
+    "summary": {
+        "sv": "Arkivenheter sorterade efter ämnesområde",
+        "en": "Archival records sorted by subject"
+    },
+    "items": [
+   {
+      "id": "https://{host}/collection/kartor-och-ritningar",
+      "type": "Collection",
+      "label": {
+         "sv": "Kartor och ritningar",
+         "en": "Maps and drawings"
+      }
+   }   
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "{}",
+    "id": "{}",
+    "type": "Collection",
+    "label": {
+        "sv": "Kartor och ritningar",
+        "en": "Maps and drawings"
+    },
+    "summary": {
+        "sv": "Arkivenheter sorterade efter ämnesområde: kartor och ritningar",
+        "en": "Archival records sorted by subject: maps and drawings"
+    },
+    "items": [
+    {
+        "id": "https://{host}/collection/arkiv/arkis!lfn58fOxfKgkoC3yNOpse7",
+        "type": "Collection",
+        "label": {
+            "sv": "Sverige Topografiska kartor"
+        }
+    }
+    ]
+}
