@@ -1,31 +1,57 @@
 {
-    "@context": "",
-    "id": "",
     "type": "Collection",
     "label": {
-        "sv": ["Ämnesområde"],
-        "en": ["Subject"]
+        "sv": [
+            "Ämnesområde"
+        ],
+        "en": [
+            "Subject"
+        ]
     },
     "summary": {
-        "sv": ["Arkivenheter sorterade efter ämnesområde"],
-        "en": ["Archival records sorted by subject"]
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde"
+        ],
+        "en": [
+            "Archival records sorted by subject"
+        ]
     },
     "items": [
-	   {		  
-		  "id": "{host}collection/kartor-och-ritningar",
-		  "type": "Collection",
-		  "label": {
-			 "sv": ["Kartor och ritningar"],
-			 "en": ["Maps and drawings"]
-		  }
-	   },
-	   {		  
-		  "id": "{host}collection/testarkiv",
-		  "type": "Collection",
-		  "label": {
-			 "sv": ["Testarkiv"],
-			 "en": ["Test archives"]
-		  }
-	   }  
-	]   
+        {
+            "id": "{host}collection/kartor-och-ritningar",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Kartor och ritningar"
+                ],
+                "en": [
+                    "Maps and drawings"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/brott-och-straff",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Brott och straff"
+                ],
+                "en": [
+                    "Crime and punishment"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/testarkiv",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Testarkiv"
+                ],
+                "en": [
+                    "Test archives"
+                ]
+            }
+        }
+    ]
 }

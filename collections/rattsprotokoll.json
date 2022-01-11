@@ -1,0 +1,48 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Rättsprotokoll"
+        ],
+        "en": [
+            "Legal records"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Rättsprotokoll"
+        ],
+        "en": [
+            "Legal records"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/GagNeBUQrH6d0002H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Nedre Borgrätten"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/domstolsarkiv",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Domstolsarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/trolldomskommissionen",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Trolldomskommissionen"
+                ]
+            }
+        }
+    ]
+}

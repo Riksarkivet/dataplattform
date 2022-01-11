@@ -1,22 +1,30 @@
 {
-    "@context": "",
-    "id": "",
     "type": "Collection",
     "label": {
-        "sv": ["Kartor och ritningar"],
-        "en": ["Maps and drawings"]
+        "sv": [
+            "Kartor och ritningar"
+        ],
+        "en": [
+            "Maps and drawings"
+        ]
     },
     "summary": {
-        "sv": ["Arkivenheter sorterade efter ämnesområde: kartor och ritningar"],
-        "en": ["Archival records sorted by subject: maps and drawings"]
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: kartor och ritningar"
+        ],
+        "en": [
+            "Archival records sorted by subject: maps and drawings"
+        ]
     },
     "items": [
-    {		
-        "id": "{host}collection/arkiv/lfn58fOxfKgkoC3yNOpse7",
-        "type": "Collection",
-        "label": {
-            "sv": ["Sverige Topografiska kartor"]
+        {
+            "id": "{host}collection/arkiv/lfn58fOxfKgkoC3yNOpse7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sverige Topografiska kartor"
+                ]
+            }
         }
-    }
     ]
 }

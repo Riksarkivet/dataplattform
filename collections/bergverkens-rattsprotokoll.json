@@ -1,0 +1,48 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Bergverkens rättsprotokoll"
+        ],
+        "en": [
+            "Bergverken legal records"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Bergverkens rättsprotokoll"
+        ],
+        "en": [
+            "Bergverken legal records"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/1JwNeBUQrH6d0002H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bergskollegium Advokatfiskalskontorets arkiv"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/aC0ZwTUiLKMSRkwUyCezH3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Nora och Lindes bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/aC0ZwTUiLKMSRkwUyCezH3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Nora och Lindes bergmästaredöme"
+                ]
+            }
+        }
+	]
+}

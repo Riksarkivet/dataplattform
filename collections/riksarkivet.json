@@ -1,24 +1,35 @@
 {
-    "@context": "",
-    "id": "",
-    "type": "Collection",
-    "label":  {
-        "sv": ["Riksarkivet"],
-        "en": ["National Archives of Sweden"]
-    },
-    "summary": {
-        "sv": ["Riksarkivets digitiserade publika arkivhandlingar, publicerade via IIIF"],
-        "en": ["Digitized public archival records of the National Archives of Sweden, published via IIIF"]
-    },
+	"@context": "",
+	"id": "",
+	"type": "Collection",
+	"label": {
+		"sv": [
+			"Riksarkivet"
+		],
+		"en": [
+			"National Archives of Sweden"
+		]
+	},
+	"summary": {
+		"sv": [
+			"Riksarkivets digitiserade publika arkivhandlingar, publicerade via IIIF"
+		],
+		"en": [
+			"Digitized public archival records of the National Archives of Sweden, published via IIIF"
+		]
+	},
 	"items": [
 		{
-			
-			"id": "{host}collection/amnesomrade",
+			"id": "{host}collection/amnesomraden",
 			"type": "Collection",
 			"label": {
-				"sv": ["Ämnesområde"],
-				"en": ["Subject"]
+				"sv": [
+					"Ämnesområde"
+				],
+				"en": [
+					"Subject"
+				]
 			}
 		}
-    ]
+	]
 }
