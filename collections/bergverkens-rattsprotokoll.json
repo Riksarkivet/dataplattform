@@ -36,11 +36,110 @@
             }
         },
         {
-            "id": "{host}collection/arkiv/aC0ZwTUiLKMSRkwUyCezH3",
+            "id": "{host}collection/arkiv/jeHRrFDxPas9gwgM97VA73",
             "type": "Collection",
             "label": {
                 "sv": [
-                    "Rättsprotokoll från Nora och Lindes bergmästaredöme"
+                    "Rättsprotokoll från Norr- och Västerbottens bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/yyBmzeKvoiaJyr9zZfEClk1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från nya Kopparbergs bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/2b2J3Qbq84g01WVGThUh91",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Sala bergslag"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/4wT7kyVkyjCXUO2jZV6j00",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Skånes och Kronobergs bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/mlVN6V13EaMSTpirU7yzuF",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Stora Kopparbergs bergslag"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/AKB3pGUq0KABMD35xoj790",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll Södermanlands och Östergötlands bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/vfkTPKnV2qcz4YMXRzCpzN",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Upplands och Gävleborgs bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/SfUjWJPI1Kkeo1AI1QKZN3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Värmlands bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/q0n0CJKRoKQtnZZYLmSIU3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Västernorrlands och Jämtlands bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/NTCgf72g04Es002vcJlaj0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll från Öster- och Västerbergslagens bergmästaredöme"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/lTi0GXA024YKsfS0i46bj3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll, slutserie (från o. 1811)"
+                ]
+            }
+        }},
+        {
+            "id": "{host}collection/arkiv/Im18iVIqsKI7Yx4TfEXuu0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rättsprotokoll, supplementserie (till o. 1811)"
                 ]
             }
         }
