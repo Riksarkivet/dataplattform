@@ -1,0 +1,57 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Idrott"
+        ],
+        "en": [
+            "Sports"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: idrott"
+        ],
+        "en": [
+            "Archival records sorted by subject: sports"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/cyBwfqJDweZJW8018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Nordiska spelen, klipp- och fotosamling"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/nvJYFecRrH6d0G02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Stockholmsolympiaden 1912"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/WukYhNGTrH6Wj01GYopFQ0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sveriges Riksidrottsförbund, föreningarnas inträdesansökningar, 1930– och 40-talen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/IGyFTQ2LdgHNJ8WXkqRzDC",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sveriges Riksidrottsförbund, föreningarnas inträdesansökningar, 1951–60"
+                ]
+            }
+        }
+	]
+}

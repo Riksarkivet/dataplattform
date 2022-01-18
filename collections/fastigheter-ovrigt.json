@@ -1,0 +1,48 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Fastigheter och gårdar - övrigt"
+        ],
+        "en": [
+            "Properties and farms - other"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Fastigheter och gårdar - övrigt"
+        ],
+        "en": [
+            "Properties and farms - other"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/iGbtsSbBIKkz1KpZQHecr5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Geometriska jordeböcker"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/wz0hU2oxYYFDgWuu3ukUs5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Förrättningsakter och geografiska kartor"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/Sbr2J8cRrH6d0G02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Överintendentsämbetet, ritningar över kyrkliga byggnader"
+                ]
+            }
+        }
+	]
+}

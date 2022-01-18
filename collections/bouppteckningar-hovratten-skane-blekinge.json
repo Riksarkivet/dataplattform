@@ -1,0 +1,39 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Bouppteckningar, Hovrätten över Skåne och Blekinge"
+        ],
+        "en": [
+            "Inventory of estates, Hovrätten över Skåne och Blekinge"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Bouppteckningar, Hovrätten över Skåne och Blekinge"
+        ],
+        "en": [
+            "Inventory of estates, Hovrätten över Skåne och Blekinge"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/kR4F1us4wqYzVcPetzOdoC",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bouppteckningar 1821–1917"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/kR4F1us4wqYzVcPetzOdoC",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bouppteckningar i förseglade konvolut 1822–1831, 1834-1947"
+                ]
+            }
+        }
+	]
+}

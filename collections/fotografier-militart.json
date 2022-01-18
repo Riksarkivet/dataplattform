@@ -1,0 +1,66 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Fotografier - militärt"
+        ],
+        "en": [
+            "Photographies - military"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Fotografier - militärt"
+        ],
+        "en": [
+            "Photographies - military"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/jGjYEuv534owHUFFM7NQy5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bildsamlingen, informationssektionen Försvarsstaben"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/fotografisamlingarna-krigsarkivet",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fotografisamlingarna, Krigsarkivet"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/MLYt6xeBK4zA3aKdlpYDz2",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Frivilliga i Finland, Fotografialbum 19. flygflottiljen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/P8nuPojIgKEijGDNSXQBy1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Försvarsstaben, Vykortssamlingen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/P8nuPojIgKEijGDNSXQBy1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Försvarsstaben, Vykortssamlingen"
+                ]
+            }
+        }
+	]
+}

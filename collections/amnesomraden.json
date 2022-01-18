@@ -18,14 +18,14 @@
     },
     "items": [
         {
-            "id": "{host}collection/kartor-och-ritningar",
+            "id": "{host}collection/bouppteckningar",
             "type": "Collection",
             "label": {
                 "sv": [
-                    "Kartor och ritningar"
+                    "Bouppteckningar"
                 ],
                 "en": [
-                    "Maps and drawings"
+                    "Inventory of estates"
                 ]
             }
         },
@@ -38,6 +38,108 @@
                 ],
                 "en": [
                     "Crime and punishment"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/emigration",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Emigration"
+                ],
+                "en": [
+                    "Emigration"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/fastigheter-och-gardar",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fastigheter och gårdar"
+                ],
+                "en": [
+                    "Properties and farms"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/fotografier",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fotografier"
+                ],
+                "en": [
+                    "Photographies"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/gastgiveri-och-skjutsvasen",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Gästgiveri och skjutsväsen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/heraldik",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Heraldik"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/idrott",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Idrott"
+                ],
+                "en": [
+                    "Sports"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/kartor-och-ritningar",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Kartor och ritningar"
+                ],
+                "en": [
+                    "Maps and drawings"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/kolonier-och-kolonialhandel",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Kolonier och kolonialhandel"
+                ],
+                "en": [
+                    "Colonies and colonial trade"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/kungligheter-och-celebriteter",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Kungligheter och celebriteter"
+                ],
+                "en": [
+                    "Royals and celebrities"
                 ]
             }
         },

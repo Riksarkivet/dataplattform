@@ -1,0 +1,165 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Militära kartor och ritningar"
+        ],
+        "en": [
+            "Military maps and drawings"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Militära kartor och ritningar"
+        ],
+        "en": [
+            "Military maps and drawings"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/generalfalttygmastarens-ritningssamling",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Generalfälttygmästarens ritningssamling"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/AwBKLPUAqqUGtNLGHo3lq0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Handritade Kartverk"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/krigsarkivets-kart-och-ritningssamlingar",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Krigsarkivets kart- och ritningssamlingar"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/lAELykjdz1EZN9cxABCer7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Marinens ritningar"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/vGc6BRptJ4YzasMCcwcnu6",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sverige, stads- och fästningsplaner 1521–1942"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/vGc6BRptJ4YzasMCcwcnu6",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sverige, stads- och fästningsplaner 1521–1942"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/lfn58fOxfKgkoC3yNOpse7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sverige Topografiska kartor"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/NBYKocsIPqQabsKnykNRN7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sveriges Krig 1521–1864"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/eVoHLOlRHqYlS2g2ZcgZL1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Tält och byggnader, samling"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/trjLUF09WKz6UQCaYDTiS1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska kartor, Afrika, Amerika, Asien"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/uQHYNURlEKsIFYNnfS08C2",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska kartor, Norge"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/yVQ806MU7oTFN5YEgirSN0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska kartor, Ryssland, Finland"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/yYh88G0hAY7RdyXxZkrtO0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska kartor, tyskspråkiga länder, Danmark, Polen, Turkiet, Ungern"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/jBLZghu23qYXVYykT0lI82",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska kartor, västeuropeiska länder"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/T2uAGxpeygDCX9bPrlvcU4",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska Krigsplaner"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/bFFDcQHEX4AB0l7DObn1z1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utländska stads- och fästningsplaner 1550–1989"
+                ]
+            }
+        }
+	]
+}

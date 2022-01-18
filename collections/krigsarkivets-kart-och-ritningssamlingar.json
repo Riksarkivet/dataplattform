@@ -1,0 +1,25 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Krigsarkivets kart- och ritningssamlingar"
+        ],
+        "en": [
+            "The Military Archives map and drawing collections"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Krigsarkivets kart- och ritningssamlingar"
+        ],
+        "en": [
+            "The Military Archives map and drawing collections"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/?items=<sökning>",
+            "type": "Collection"
+        }
+	]
+}

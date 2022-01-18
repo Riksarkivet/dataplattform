@@ -1,0 +1,57 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "By-, gårds- och godsarkiv"
+        ],
+        "en": [
+            "Village, farm and estate archives"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "By-, gårds- och godsarkiv"
+        ],
+        "en": [
+            "Village, farm and estate archives"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/ySLn7qJDweZJW8018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bielkesamlingen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/nIuU9b3Ch4MexYI4OZBNJ0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Gottsunda gård"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/CSD6bDX9rH6cxG02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Nykvarns bruks- och gårdsarkiv"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/SzXfmWbuE27NwefS6yLj4C",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Vallens byamäns arkiv"
+                ]
+            }
+        }
+	]
+}

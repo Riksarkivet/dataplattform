@@ -1,0 +1,48 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Fastigheter och gårdar"
+        ],
+        "en": [
+            "Properties and farms"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: fastigheter och gårdar"
+        ],
+        "en": [
+            "Archival records sorted by subject: properties and farms"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/fastighetsbocker",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fastighetsböcker (domstolsarkiv)"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/fastigheter-ovrigt",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fastigheter och gårdar - övrigt"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/by-gards-och-godsarkiv",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "By-, gårds- och godsarkiv"
+                ]
+            }
+        }
+	]
+}

@@ -1,0 +1,66 @@
+{
+    "type": "Collection",
+    "label": {
+		"sv": [
+			"Kolonier och kolonialhandel"
+		],
+		"en": [
+			"Colonies and colonial trade"
+		]
+},
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: kolonier och kolonialhandel"
+        ],
+        "en": [
+            "Archival records sorted by subject: colonies and colonial trade"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/FPOY7NwTsqURO0fXPYjpP2",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Föreslagna expeditionen till Madagaskar 1718"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/CuFxubyH92JJ26gn2YFqV7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Kolonier, Nya Sverige"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/GEhQE1HetqsJqtOmGy4br0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Ostindiska kompaniets försäljningsböcker"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/H2QNeBUQrH6d0002H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Saint Barthélemysamlingen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/H1ORxZ3byI7DYlcKyNx9fB",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Treefalldigheetsfort in Nova Suecia"
+                ]
+            }
+        }
+	]
+}

@@ -1,0 +1,93 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Emigration"
+        ],
+        "en": [
+            "Emigration"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: emigration"
+        ],
+        "en": [
+            "Archival records sorted by subject: emigration"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/2ouxXw5trH6cyG018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bröderna Larsson och Co:s arkiv"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/BybMb2jJQOZFAe184ymzd9",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Emigranter över Bergen hamn från utlandet 1874-1924"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/75XOi9yxweZJUG018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Göteborgs poliskammares arkiv före 1900 - Inkomna uppgifter om utvandrade personer"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/7bXOi9yxweZJUG018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Göteborgs poliskammares arkiv före 1900 - Övriga handlingar rörande utvandrare"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/sFftXgKfba6L1hEmXIW4J1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Immigrantregister Sverige–New York, 1851–1860"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/uoVDlAuMTagXeTn7INBMq1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Immigrantregister Sverige–New York, 1851–1860"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/hRTJlWRrlaATEA1QwsdVk1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utvandrarelistor, poliskammaren i Malmö"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/lZkyF37hGIL2wcbGB1Vju6",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Utvandrarrulla 1869–1904, äldre poliskammaren"
+                ]
+            }
+        }
+	]
+}
