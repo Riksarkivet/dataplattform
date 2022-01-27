@@ -144,6 +144,66 @@
             }
         },
         {
+            "id": "{host}collection/medeltid",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Medeltid"
+                ],
+                "en": [
+                    "Medieval"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/medicin",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Medicin"
+                ],
+                "en": [
+                    "Medicin"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/militaria",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Militaria"
+                ],
+                "en": [
+                    "Militaria"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/musik-och-film",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Musik och film"
+                ],
+                "en": [
+                    "Music and film"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/narings-och-yrkesliv",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Närings- och yrkesliv"
+                ],
+                "en": [
+                    "Industry and working life"
+                ]
+            }
+        },
+        {
             "id": "{host}collection/testarkiv",
             "type": "Collection",
             "label": {

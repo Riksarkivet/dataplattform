@@ -1,0 +1,93 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Militaria"
+        ],
+        "en": [
+            "Militaria"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: militaria"
+        ],
+        "en": [
+            "Archival records sorted by subject: militaria"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/rullor",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Rullor"
+                ],
+				"en": [
+					"Rolls"
+				]
+            }
+        },
+		{
+            "id": "{host}collection/militara-kyrkbocker",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Militära kyrkböcker"
+                ],
+				"en": [
+					"Military church books"
+				]
+            }
+        },
+		{
+            "id": "{host}collection/militara-kartor-och-ritningar",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Militära kartor och ritningar"
+                ],
+				"en": [
+					"Military maps and drawings"
+				]
+            }
+        },
+		{
+            "id": "{host}collection/diverse-militart",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Diverse, militärt"
+                ],
+				"en": [
+					"Mixed, military"
+				]
+            }
+        },
+		{
+            "id": "{host}collection/samlingar-och-enskilda-arkiv-militart",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Samlingar och enskilda arkiv"
+                ],
+				"en": [
+					"Collections and personal archives"
+				]
+            }
+        },
+		{
+            "id": "{host}collection/fotografier-militart",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fotografier"
+                ],
+				"en": [
+					"Photographs"
+				]
+            }
+        }
+	]
+}

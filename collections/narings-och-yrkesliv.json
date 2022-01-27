@@ -1,0 +1,90 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Närings- och yrkesliv"
+        ],
+        "en": [
+            "Industry and working life"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: närings- och yrkesliv"
+        ],
+        "en": [
+            "Archival records sorted by subject: industry and working life"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/aktiebolag",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Aktiebolag, handelsregister och fabriksberättelser"
+                ],
+				"en": [
+					"Incorporated companies, trade registers and factory reports"
+				]
+            }
+        },
+        {
+            "id": "{host}collection/bergvasen",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bergväsen"
+                ]
+            }
+        },
+        {
+            "id": "{host}collection/bruk",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Bruk"
+                ],
+				"en": [
+					"Mill, industry"
+				]
+            }
+        },
+        {
+            "id": "{host}collection/sjoman",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Sjömän"
+                ],
+				"en": [
+					"Shipping office (sea)"
+				]
+            }
+        },
+        {
+            "id": "{host}collection/ordnar-och-medaljer",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Ordnar och medaljer"
+                ],
+				"en": [
+					"Royal orders and medals"
+				]
+            }
+        },
+        {
+            "id": "{host}collection/naringsliv-ovrigt",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Övrigt"
+                ],
+				"en": [
+					"Other"
+				]
+            }
+        }
+	]
+}

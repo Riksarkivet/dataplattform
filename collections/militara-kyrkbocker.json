@@ -1,0 +1,75 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Militära kyrkböcker"
+        ],
+        "en": [
+            "Military church books"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Militära kyrkböcker"
+        ],
+        "en": [
+            "Military church books"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/i4t5JYz1RABToUA8d1U6q5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Göta livgardes församlings kyrkoarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/TDGw3gHtrH6cyG018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Karlsborgs Garnisonsförsamlings kyrkoarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/hgDyBXWPFIFPBkxy4X04kF",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Livgardets till häst församlings kyrkoarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/EUrEe4DVGKz8EqO8dIuqh5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Svea artilleriregementes församlings kyrkoarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/5FbKNm7jz2P78JlZIfJXq4",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Svea livgardes församlings kyrkoarkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/jFzg9ybwDGHkyE0Q5kVFKB",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Vadstena krigsmanshusförsamlings arkiv Födelse- och dopböcker 1670–1784"
+                ]
+            }
+        }
+	]
+}

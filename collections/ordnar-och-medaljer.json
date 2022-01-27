@@ -1,0 +1,30 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Ordnar och medaljer"
+        ],
+        "en": [
+            "Royal orders and medals"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Ordnar och medaljer"
+        ],
+        "en": [
+            "Royal orders and medals"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/iz5xqvtakA5P9V9IQVam03",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Matriklar, Kungl. Maj:ts Ordens arkiv"
+				]
+            }
+        }
+	]
+}

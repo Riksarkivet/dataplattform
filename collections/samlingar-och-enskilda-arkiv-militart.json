@@ -1,0 +1,84 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Samlingar och enskilda arkiv"
+        ],
+        "en": [
+            "Collections and personal archives"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Samlingar och enskilda arkiv"
+        ],
+        "en": [
+            "Collections and personal archives"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/Ed1s6MRIoqoKrIVmE040w3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Georg Henrik Barfods journal"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/MQO3c7qN9KUs266Vv8obq2",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Biografica - mikrofilmade dossiéer"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/u07xElKkraEzQvnmKytTxF",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Registerkort till samlingen Biografica"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/2IsRIrc4ZKwXwxfzUlU3l5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Fredrik Arosenius teckningar"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/Y77EhHN3ha69sm30gNDFz5",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Johan Georg Arsenius teckningar"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/KACQh8BHC4cvhs7ScdHCs2",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Karl XII:s skrivböcker"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/DrHhUFT8rH6cxG02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Regementsskrivare P. Sandwalls arkiv"
+                ]
+            }
+        }
+	]
+}

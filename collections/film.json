@@ -1,0 +1,30 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Film"
+        ],
+        "en": [
+            "Film"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Film"
+        ],
+        "en": [
+            "Film"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/4q6NeBUQrH6d0002H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Statens biografbyrås arkiv"
+				]
+            }
+        }
+	]
+}

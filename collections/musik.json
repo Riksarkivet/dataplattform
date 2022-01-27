@@ -1,0 +1,39 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Musik"
+        ],
+        "en": [
+            "Music"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Musik"
+        ],
+        "en": [
+            "Music"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/gyqHzRbuYnDirmntWnHU45",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Berendt Petri orgeltabulatur"
+				]
+            }
+        },
+        {
+            "id": "{host}collection/arkiv/gjViDQZYxaMCjfcVWkvz55",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Notbok från 1600-talet, Källunge kyrkoarkiv"
+				]
+            }
+        }
+	]
+}

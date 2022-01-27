@@ -1,0 +1,57 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Medicin"
+        ],
+        "en": [
+            "Medicin"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Arkivenheter sorterade efter ämnesområde: medicin"
+        ],
+        "en": [
+            "Archival records sorted by subject: medicin"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/GDOjlqrHiKUv0CUrbPkRQ1",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Register till provinsialläkares årsberättelser 1769–1869"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/VgNrJecRrH6d0G02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Årsberättelser från provinsialläkare, 1769–1814 (Collegium medicum)"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/ogNrJecRrH6d0G02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Årsberättelser från provinsialläkare, 1815–1869 (Sundhetskollegium)"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/OFV5mD56GqUkHZo40E6vi0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Journaler över intagna patienter, Gådeå sjukhus, 1826–1890"
+                ]
+            }
+        }
+	]
+}

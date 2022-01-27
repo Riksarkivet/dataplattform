@@ -1,0 +1,156 @@
+{
+    "type": "Collection",
+    "label": {
+        "sv": [
+            "Diverse militärt"
+        ],
+        "en": [
+            "Mixed military"
+        ]
+    },
+    "summary": {
+        "sv": [
+            "Diverse militärt"
+        ],
+        "en": [
+            "Mixed military"
+        ]
+    },
+    "items": [
+        {
+            "id": "{host}collection/arkiv/kgn96xcfIq6CZ4eAdMU8M3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Domböcker 1635–1821 från Krigshovrätten"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/hdGOTGsXUaMRZyhU3e1aW4",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Flottans centrala ledning"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/tmVB0G9MxaAXxU3OP9yzt0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Flottans pensionskassa"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/5sbr53MTT4Iw0EhBl89Yj0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Gävleborgs läns landskontors arkiv - Handlingar angående ryssarnas härjningar 1721–1729"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/YFqNYFT8rH6cxG02H087k3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Jämtlands läns landskontors arkiv - Handlingar rörande militärboställen 1699–1935"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/eklQi251zQPQg5XTMmBj84",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Krigskollegium, Krigskollegii kansli"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/EUCGN04zbIHIzI3ymqd9vB",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Krigskollegium, Militiekontoret"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/p6zFjX5Uyb4XoMNL3nG1b9",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Krigshandlingar Stora nordiska kriget"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/qtS5lLKXdKUpQMzUUYY1N7",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Likvidationer: Stora Nordiska kriget"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/iz5xqvtakA5P9V9IQVam03",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Matriklar, Kungl. Maj:ts Ordens arkiv"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/nvdpYriLw4kIldR0dILrk0",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Meritförteckningar"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/RRRFdI9EF4As2Zw8S4yhh6",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Militieräkenskaper Ort- och personregister 1537–1619"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/MRROSAjM1azJuQ7XPyAgH8",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Militieräkningar"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/ttyfoUmaweZJTe018W43t3",
+            "type": "Collection",
+            "label": {
+                "sv": [
+                    "Handlingar rörande Nora och Karlstads kronohäkten Spridda år 1676–1678"
+                ]
+            }
+        },
+		{
+            "id": "{host}collection/arkiv/BzLHifhi923Ss8hVTwG1r4",
+            "type": "Collection",
+            "label": {
+                "sv": [
+					"Överstyrelsen, Arméns pensionskassa"
+                ]
+            }
+        }
+	]
+}
