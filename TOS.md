@@ -15,7 +15,7 @@ Riksarkivet tillhandahåller följande APIer:
 
 Riksarkivets publika API-er returnerar data som är äldre än 110 år samt data som är uttryckligen förenliga med GDPR.
 
-Merparten av arkivhandlingarna är offentliga handlingar, där det inte föreligger någon upphovsrätt. Digitiserat material är mestadels rättighetsmärkt med (Public Domain Mark 1.0)[https://creativecommons.org/publicdomain/mark/1.0/]. Det finns undantag, där annan aktör än Riksarkivet gjort digitiseringen. Dessa data har en Creative Commons-licens. Posternas metadata är huvudsakligen rättighetsmärkta med (CC0 1.0 universell)[https://creativecommons.org/publicdomain/zero/1.0/deed.sv]. Eventuella undantag har annan Creative Commons-licens.
+Merparten av arkivhandlingarna är offentliga handlingar, där det inte föreligger någon upphovsrätt. Digitiserat material är mestadels rättighetsmärkt med [Public Domain Mark 1.0](https://creativecommons.org/publicdomain/mark/1.0/). Det finns undantag, där annan aktör än Riksarkivet gjort digitiseringen. Dessa data har en Creative Commons-licens. Posternas metadata är huvudsakligen rättighetsmärkta med [CC0 1.0 universell](https://creativecommons.org/publicdomain/zero/1.0/deed.sv). Eventuella undantag har annan Creative Commons-licens.
 
 ## Autenticering och auktorisering
 
@@ -23,4 +23,4 @@ Riksarkivets publika API-er kräver ingen autenticering eller api-nyckel. I och 
 
 ## Tillgänglighet och begränsningar
 
-API-ernas tillgängligheten beror på tillgänglig server- och nätvekskapacitet. Riksarkivet kan vid behov sätta mängdbegränsning på åtkomst till API-er ((rate limiting)[https://nordicapis.com/everything-you-need-to-know-about-api-rate-limiting/]). Om en enskild klient utnyttjar tillgängliga resurser så intensivt att det försämrar tillgängligheten till Riksarkivets tjänster för andra användare har Riksarkivet möjligheten att blockera den klienten tills vidare, medan en utredning och dialog om nyttjandet pågår.
+API-ernas tillgängligheten beror på tillgänglig server- och nätvekskapacitet. Riksarkivet kan vid behov sätta mängdbegränsning på åtkomst till API-er ([rate limiting](https://nordicapis.com/everything-you-need-to-know-about-api-rate-limiting/)). Om en enskild klient utnyttjar tillgängliga resurser så intensivt att det försämrar tillgängligheten till Riksarkivets tjänster för andra användare har Riksarkivet möjligheten att blockera den klienten tills vidare, medan en utredning och dialog om nyttjandet pågår.
