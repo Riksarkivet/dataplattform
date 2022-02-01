@@ -77,16 +77,7 @@ Referenskodens två första element anger arkivinstitution. I exemplet är det *
       <name authfilenumber="SE/902002">Lokal upphovsman KARTIA (KrA) - Getkant, Friedrich</name>
     </origination>
         
-### Bildvisningslänk
-        
-    <did>
-      ...
-      <dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002787?partner=ape" />
-      <dao xlink:role="MANIFEST" xlink:href="https://lbiiif-acc.riksarkivet.se/arkis!C0002787/manifest" xlink:title="manifest" />
-      <dao xlink:role="SERVICE" xlink:href="https://lbiiif-acc.riksarkivet.se" xlink:title="service" xlink:arcrole="https://iiif.io/api/image/3/level1.json" />
-    </did>
-        
-### Allmän anmärkning
+## Allmän anmärkning
         
     <scopecontent encodinganalog="summary">
       <p>Med ortregister. Innehåller även längder över utflyttat tjänstefolk 1765-1771, 1773-1775 och uppbördslängd över "Åhrliga Påskepenningar af Alunda Sockns Ordinaira Soldater" 1753-1766.</p>
