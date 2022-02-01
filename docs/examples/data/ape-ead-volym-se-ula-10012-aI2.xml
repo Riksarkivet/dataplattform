@@ -1,11 +1,11 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-	<responseDate>2022-01-03T17:59:58.5930307Z</responseDate>
-	<request verb="GetRecord" identifier="SE/ULA/10012/A I/2" metadataPrefix="oai_ape_ead">https://oai-pmh.riksarkivet.se/OAI/</request>
+	<responseDate>2022-02-01T11:58:32.6524534Z</responseDate>
+	<request verb="GetRecord" identifier="SE/ULA/10012/A I/2" metadataPrefix="oai_ape_ead">https://oai-pmh-acc.riksarkivet.se/OAI/</request>
 	<GetRecord>
 		<record>
 			<header>
 				<identifier>SE/ULA/10012/A I/2</identifier>
-				<datestamp>2006-11-08T23:00:00.000Z</datestamp>
+				<datestamp>2022-01-24T14:10:41.927Z</datestamp>
 				<setSpec>SE_ULA_10012_A+I_2</setSpec>
 			</header>
 			<metadata>
@@ -22,11 +22,11 @@
 						</profiledesc>
 						<revisiondesc>
 							<change>
-								<date calendar="gregorian" era="ce">2022-01-03T17:59:58.700Z</date>
+								<date calendar="gregorian" era="ce">2022-02-01T11:58:32.663Z</date>
 								<item>Informationen kopierad ur Arkis</item>
 							</change>
 							<change>
-								<date calendar="gregorian" era="ce">2006-11-08T23:00:00.000Z</date>
+								<date calendar="gregorian" era="ce">2022-01-24T14:10:41.927Z</date>
 								<item>Senaste uppdatering i Arkis</item>
 							</change>
 						</revisiondesc>
@@ -37,6 +37,8 @@
 							<unittitle>1772--1778</unittitle>
 							<unitdate calendar="gregorian" era="ce" normal="1772/1778" encodinganalog="3.1.3">1772--1778</unitdate>
 							<dao xlink:role="IMAGE" xlink:href="https://sok-acc.riksarkivet.se/bildvisning/C0002788?partner=ape" />
+							<dao xlink:role="MANIFEST" xlink:href="https://lbiiif-acc.riksarkivet.se/arkis!C0002788/manifest" xlink:title="manifest" />
+							<dao xlink:role="SERVICE" xlink:href="https://lbiiif-acc.riksarkivet.se" xlink:title="service" xlink:arcrole="https://iiif.io/api/image/3/level1.json" />
 						</did>
 						<scopecontent encodinganalog="summary">
 							<p>Med ortregister.</p>
@@ -44,6 +46,11 @@
 						<accessrestrict encodinganalog="3.4.1">
 							<p>Delvis</p>
 						</accessrestrict>
+						<userestrict encodinganalog="3.4.5" type="dao">
+							<p>
+								<extref xlink:href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</extref>
+							</p>
+						</userestrict>
 						<otherfindaid encodinganalog="3.4.5">
 							<p>
 								<extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/4MgUgjX9rH6cxG02H087k3">Post i NAD</extref>
