@@ -2,10 +2,14 @@
 
 # Riksarkivet dataplattform
 
-## [OAI-PMH](docs/OAI-PMH.md)
+Dataplattformen är en samling tjänster och APIer som gör Riksarkivets publika data tillgängliga för återanvändning i andra system.
 
-## [IIIF](docs/IIIF.md)
+## API-dokumentation
 
-## [Sök-API](docs/Sök-API.md)
+### [OAI-PMH](docs/OAI-PMH.md)
+
+### [IIIF](docs/IIIF.md)
+
+### [Sök-API](docs/Sök-API.md)
 
 ## [Användningsvillkor](TOS.md)
