@@ -39,15 +39,7 @@ Referenskoden är egentligen **SE/ULA/10012/A I/1**, mellanslaget försvinner i 
       ...
     </did>
   
-### Länk till posten
-
-    <otherfindaid encodinganalog="3.4.5">
-      <p>
-        <extref xlink:href="https://sok-acc.riksarkivet.se/arkiv/46gUgjX9rH6cxG02H087k3">Post i NAD</extref>
-      </p>
-    </otherfindaid>
-  
-### Omfång
+## Omfång
       
     <physdesc encodinganalog="3.4.4">
       <extent unit="Kartor">1</extent>
@@ -80,7 +72,7 @@ Referenskodens två första element anger arkivinstitution. I exemplet är det *
 ## Allmän anmärkning
         
     <scopecontent encodinganalog="summary">
-      <p>Med ortregister. Innehåller även längder över utflyttat tjänstefolk 1765-1771, 1773-1775 och uppbördslängd över "Åhrliga Påskepenningar af Alunda Sockns Ordinaira Soldater" 1753-1766.</p>
+      <p>Med ortregister.</p>
     </scopecontent>
         
 ### Rättighetsmärkning
