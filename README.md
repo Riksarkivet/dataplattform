@@ -12,4 +12,5 @@ Dataplattformen är en samling tjänster och APIer som gör Riksarkivets publika
 
 ### [Sök-API](docs/Sök-API.md)
 
+----
 ## [Användningsvillkor](TOS.md)
