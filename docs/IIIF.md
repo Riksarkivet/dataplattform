@@ -71,7 +71,7 @@ Skala på bredd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/300,/0/d
 
 Skala på höjd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/,500/0/default.jpg
 
-Skala på bredd samt höjd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/!500,300/0/default.jpg
+Skala på bredd samt höjd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/500,300/0/default.jpg
 
 #### Rotation
 
