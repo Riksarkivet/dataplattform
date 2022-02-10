@@ -51,35 +51,35 @@ För en fullständig beskrivning av URI-syntax se [version 2.0](https://iiif.io/
 ### Exempel på IIIF Image-anrop
 
 ##### Bildformat (format): Endast stöd för "jpg"
-##### Färmodell (quality): Endast stöd för "default"
+##### Färgmodell (quality): Endast stöd för "default"
 
 #### "Region" / Utsnitt
 		
 Exempel på "full" (fullständig): 
-http://iiifintern-acc.ra.se/arkis!C0002787_00008/full/max/0/default.jpg
+http://lbiiif.riksarkivet.se/arkis!C0002787_00008/full/max/0/default.jpg
 
 Exempel på "square" (kvadratisk): 
-http://iiifintern-acc.ra.se/arkis!C0002787_00030/square/max/0/default.jpg
+http://lbiiif.riksarkivet.se/arkis!C0002787_00030/square/max/0/default.jpg
 
 Exempel på utsnitt baserat på absoluta pixelvärden: 
-http://iiifintern-acc.ra.se/arkis!C0002787_00008/300,300,100,100/max/0/default.jpg
+http://lbiiif.riksarkivet.se/arkis!C0002787_00008/300,300,100,100/max/0/default.jpg
 
 
 #### "Size" / Skalning
 
-Skala på bredd: http://iiifintern-acc.ra.se/arkis!C0002787_00030/full/300,/0/default.jpg
+Skala på bredd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/300,/0/default.jpg
 
-Skala på höjd: http://iiifintern-acc.ra.se/arkis!C0002787_00030/full/,500/0/default.jpg
+Skala på höjd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/,500/0/default.jpg
 
-Skala på bredd samt höjd: http://iiifintern-acc.ra.se/arkis!C0002787_00030/full/!500,300/0/default.jpg
+Skala på bredd samt höjd: http://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/!500,300/0/default.jpg
 
 #### Rotation
 
-Ingen rotation (0): http://iiifintern-acc.ra.se/arkis!C0002787_00008/full/max/0/default.jpg
+Ingen rotation (0): http://lbiiif.riksarkivet.se/arkis!C0002787_00008/full/max/0/default.jpg
 
-Rotation 90 grader medurs: https://iiifintern-acc.ra.se/arkis!C0002787_00030/full/max/90/default.jpg
+Rotation 90 grader medurs: https://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/max/90/default.jpg
 
-Rotation 90 grader medurs och speglad: https://iiifintern-acc.ra.se/arkis!C0002787_00030/full/max/!90/default.jpg
+Rotation 90 grader medurs och speglad: https://lbiiif.riksarkivet.se/arkis!C0002787_00030/full/max/!90/default.jpg
 
 
 ## IIIF Presentation
