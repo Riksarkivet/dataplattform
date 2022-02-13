@@ -17,9 +17,25 @@ Image-APIet har metoder för att bearbeta källbilder. Riksarkivets IIIF-tjänst
 
 Riksarkivets IIIF-tjänst stöder även IIIF Image 2.0, t.ex. för användning i bildvisare som inte stöder IIIF Image 3.0, som [Universal Viewer](https://universalviewer.io/).
 
-##### Alla anrop (request) sker med Http-Get.
+### Anrop (request)
 
-##### Svaret/response för alla IIIF-anrop är av typen: content-type: "image/jpeg". Om något är fel i anropet kommer främst svar av typen 400 "BadRequest" samt 501 "Not Implemented" att användas.
+Alla anrop använder HTTP GET.
+
+### Svar (response)
+
+Svaret för alla IIIF Image-anrop har **content-type: image/jpeg**. Felaktiga anrop ger statuskod **400 BadRequest**, **404 Not Found** eller **501 Not Implemented**.
+
+### Proxy för IIIF Image
+
+Externa tjänster som använder en IIIF bildvisare, som [Universal Viewer](https://universalviewer.io/) eller [Mirador](https://projectmirador.org/), kan med fördel använda en [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) så att bildvisaren inte anropar Riksarkivets IIIF Image API endpoint direkt.
+
+Riksarkivet loggar användarens IP-adress för statistikändamål, se [användningsvillkoren](https://riksarkivet.se/...). I och med att anropen till IIIF Image API sker från webbläsaren kommer alltså loggen att lista slutanvändarens IP-adress om bildvisaren använder Riksarkivets API endpoint direkt. Med en reverse proxy kommer Riksarkivets logg att lista IP-adress för proxy-servern i stället. Det har flera fördelar:
+
+* Den externa tjänsten behöver inte upplysa om att slutanvändarens IP-adress loggas för statistik
+* Riksarkivets statistik blir bättre om all IIIF Image-trafik från en extern tjänst loggas samlat under proxy-serverns IP-adress
+* Utvecklaren av den externa tjänsten kan sätta upp egen statistikhantering med hjälp av loggning i proxy-servern
+
+En reverse proxy kan sättas upp med t.ex. [Apache HTTP Server](https://httpd.apache.org/) eller [NGINX](https://www.nginx.com/).
 
 ### Version 3.0
 
@@ -50,8 +66,13 @@ För en fullständig beskrivning av URI-syntax se [version 2.0](https://iiif.io/
 
 ### Exempel på IIIF Image-anrop
 
-##### Bildformat (format): Endast stöd för "jpg"
-##### Färgmodell (quality): Endast stöd för "default"
+##### Bildformat (format)
+
+Endast stöd för "jpg"
+
+##### Färgmodell (quality)
+
+Endast stöd för "default"
 
 #### "Region" / Utsnitt
 		
@@ -95,7 +116,9 @@ Det finns flera visningstillämpningar för IIIF-manifest, t.ex.
 * [Universal Viewer](https://universalviewer.io/)
 * [Mirador](https://projectmirador.org/)
 
-##### Alla anrop (request) sker med Http-Get.
+### Anrop (request) 
+
+Alla anrop använder **HTTP GET**.
 
 Presentation-APIet har en enkel URL-syntax.
 
