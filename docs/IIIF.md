@@ -29,7 +29,7 @@ Svaret för alla IIIF Image-anrop har **content-type: image/jpeg**. Felaktiga an
 
 Externa tjänster som använder en IIIF bildvisare, som [Universal Viewer](https://universalviewer.io/) eller [Mirador](https://projectmirador.org/), kan med fördel använda en [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) så att bildvisaren inte anropar Riksarkivets IIIF Image API endpoint direkt.
 
-Riksarkivet loggar användarens IP-adress för statistikändamål, se [användningsvillkoren](https://riksarkivet.se/...). I och med att anropen till IIIF Image API sker från webbläsaren kommer alltså loggen att lista slutanvändarens IP-adress om bildvisaren använder Riksarkivets API endpoint direkt. Med en reverse proxy kommer Riksarkivets logg att lista IP-adress för proxy-servern i stället. Det har flera fördelar:
+Riksarkivet loggar användarens IP-adress för statistikändamål, se [användningsvillkoren](https://sok.riksarkivet.se/om-soktjansten?infosida=anvandningsvillkor-API). I och med att anropen till IIIF Image API sker från webbläsaren kommer alltså loggen att lista slutanvändarens IP-adress om bildvisaren använder Riksarkivets API endpoint direkt. Med en reverse proxy kommer Riksarkivets logg att lista IP-adress för proxy-servern i stället. Det har flera fördelar:
 
 * Den externa tjänsten behöver inte upplysa om att slutanvändarens IP-adress loggas för statistik
 * Riksarkivets statistik blir bättre om all IIIF Image-trafik från en extern tjänst loggas samlat under proxy-serverns IP-adress
