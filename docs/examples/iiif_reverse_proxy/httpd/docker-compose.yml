@@ -6,3 +6,6 @@ services:
     container_name: httpd_proxy
     ports:
       - "8000:80"
+    volumes:
+      - ../common:/usr/local/apache2/htdocs
+
