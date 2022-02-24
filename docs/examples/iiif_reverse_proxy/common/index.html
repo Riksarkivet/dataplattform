@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Shortcut Icon" sizes="16x16 24x24 32x32 64x64" href="https://www.riksarkivet.se/Administration/Images/Icons/janus.ico">
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="/css/ra-examples.css">
+	<script src="https://unpkg.com/alpinejs" defer></script>
+	<script src="/js/ra-examples.js"></script>
+</head>
+
+<body>
+	<main class="container">
+		<h1>Riksarkivets API-er</h1>
+
+		<article>
+			<h2>Exempel - IIIF Collections</h2>
+			<p>
+				Detta exempel visar hur man kan bläddra i Riksarkivets digitiserade arkivhandlingar med hjälp av 
+				<a href="https://iiif.io/api/presentation/3.0/">IIIF Presentation API</a>.
+			</p>
+
+			<div class="grid">
+				<article x-data="{ collection: null }" x-init="collection = await getCollection(TOP_COLLECTION_URL)">
+					<details>
+						<summary>
+							<strong x-text="collection?.label?.sv[0]"></strong>
+						</summary>
+						<p x-text="collection?.summary?.sv[0]"></p>
+						<ul>
+							<template x-for="item in collection?.items" :key="item.id">
+								<li 
+									class="link" 
+									x-data="{ presentation: item.label.sv[0] + (item.type === 'Collection' ? ' <span class=\'oi\' data-glyph=\'arrow-right\' title=\'Arrow right\' aria-hidden=\'true\'></span>' : ' <span class=\'oi\' data-glyph=\'eye\' title=\'Eye\' aria-hidden=\'true\'></span>') }" 
+									x-on:click="collection = await getCollection(item.id)"
+								>
+									<span x-html="presentation"></span>
+								</li>
+							</template>
+						</ul>
+					</details>
+				</article>
+				<div></div>
+			</div>
+		</article>
+	</main>
+</body>
+
+</html>
