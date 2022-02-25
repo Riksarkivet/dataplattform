@@ -13,7 +13,14 @@
 	<script src="/js/ra-examples.js"></script>
 </head>
 
-<body>
+<body x-data="
+	{ 
+		loading: false,
+		image: {
+			present: false
+		}
+	}
+">
 	<main class="container">
 		<h1>Riksarkivets API-er</h1>
 
@@ -24,30 +31,86 @@
 				<a href="https://iiif.io/api/presentation/3.0/">IIIF Presentation API</a>.
 			</p>
 
-			<div class="grid">
-				<article x-data="{ collection: null }" x-init="collection = await getCollection(TOP_COLLECTION_URL)">
-					<details>
-						<summary>
-							<strong x-text="collection?.label?.sv[0]"></strong>
-						</summary>
-						<p x-text="collection?.summary?.sv[0]"></p>
-						<ul>
-							<template x-for="item in collection?.items" :key="item.id">
-								<li 
-									class="link" 
-									x-data="{ presentation: item.label.sv[0] + (item.type === 'Collection' ? ' <span class=\'oi\' data-glyph=\'arrow-right\' title=\'Arrow right\' aria-hidden=\'true\'></span>' : ' <span class=\'oi\' data-glyph=\'eye\' title=\'Eye\' aria-hidden=\'true\'></span>') }" 
-									x-on:click="collection = await getCollection(item.id)"
-								>
-									<span x-html="presentation"></span>
-								</li>
-							</template>
-						</ul>
-					</details>
-				</article>
-				<div></div>
-			</div>
+			<article 
+				x-data="
+					{ 
+						collection: null,
+						trail: []
+					}
+				" 
+				x-init="
+					url = collectionUrl();
+					loading = true;
+					collection = await getCollection(url);
+					loading = false;
+				"
+			>
+				<details>
+					<summary>
+						<strong x-text="collection?.label?.sv[0]"></strong>
+					</summary>
+					<p x-text="collection?.summary?.sv[0]"></p>
+					<ul>
+						<template x-for="(prev, index) in trail" :key="prev.id">
+							<li 
+								class="link" 
+								x-data="
+									{ presentation: `${prev.label} <span class='oi' data-glyph='arrow-left' title='Arrow left' aria-hidden='true'></span>` }
+								" 
+								x-on:click="
+									ancestor = trail[index];
+									trail = trail.slice(0, index);
+									loading = true;
+									collection = await getCollection(ancestor.id)
+									loading = false;
+								"
+							>
+								<span x-html="presentation"></span>
+							</li>
+						</template>
+					</ul>
+					<hr>
+					<ul>
+						<template x-for="item in collection?.items" :key="item.id">
+							<li 
+								class="link" 
+								x-data="
+									{ 
+										presentation: itemLink(item) 
+									}
+								" 
+								x-on:click="
+									alert(item.type);
+									if (item.type === 'Collection') {
+										trail.push({
+											id: collection.id,
+											label: collection.label.sv[0]
+										});
+										collection = await getCollection(item.id)
+									} else {
+										image.present = true;
+										image.id = item.id
+									}
+								"
+							>
+								<span x-html="presentation"></span>
+							</li>
+						</template>
+					</ul>
+				</details>
+			</article>
 		</article>
 	</main>
+	<dialog x-bind:open="loading">
+		<article>
+			<p aria-busy="true">Arbete pågår...</p>
+		</article>
+	</dialog>
+	<dialog x-bind:open="image.present">
+		<article>
+			Bild: <span x-text="image.id"
+		</article>
+	</dialog>
 </body>
 
 </html>

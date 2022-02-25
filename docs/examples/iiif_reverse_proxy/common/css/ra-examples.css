@@ -5,3 +5,8 @@
 .link:hover {
 	text-decoration: underline;
 }
+
+.oi {
+	margin-left: 0.5em;
+	vertical-align: middle;
+}
