@@ -80,7 +80,7 @@
 									}
 								" 
 								x-on:click="
-									alert(item.type);
+									console.log(`--- Item type: ${item.type}`);
 									if (item.type === 'Collection') {
 										trail.push({
 											id: collection.id,
