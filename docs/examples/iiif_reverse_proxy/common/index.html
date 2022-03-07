@@ -32,17 +32,12 @@
 			</p>
 
 			<article 
-				x-data="
-					{ 
-						collection: null,
-						trail: []
-					}
-				" 
+				x-data="browseContext()" 
 				x-init="
 					url = collectionUrl();
-					loading = true;
+					toggleLoading();
 					collection = await getCollection(url);
-					loading = false;
+					toggleLoading();
 				"
 			>
 				<details>
@@ -59,13 +54,7 @@
 										presentation: `${prev.label} <span class='oi' data-glyph='arrow-left' title='Arrow left' aria-hidden='true'></span>`
 									}
 								" 
-								x-on:click="
-									ancestor = trail[index];
-									trail = trail.slice(0, index);
-									loading = true;
-									collection = await getCollection(ancestor.id)
-									loading = false;
-								"
+								x-on:click="goBack(index)"
 							>
 								<span x-html="presentation"></span>
 							</li>
@@ -81,19 +70,7 @@
 										presentation: itemLink(item) 
 									}
 								"
-								x-on:click="
-									console.log(`--- Item type: ${item.type}`);
-									if (item.type === 'Collection') {
-										trail.push({
-											id: collection.id,
-											label: collection.label.sv[0]
-										});
-										collection = await getCollection(item.id)
-									} else {
-										image.present = true;
-										image.id = item.id
-									}
-								"
+								x-on:click="getItems"
 							>
 								<span x-html="presentation"></span>
 							</li>
@@ -110,9 +87,12 @@
 	</dialog>
 	<dialog x-bind:open="image.present">
 		<article>
-			Bild: <span x-text="image.id"
+			Bild: <span x-text="image.id"></span>
 		</article>
 	</dialog>
+	<script>
+		document.addEventListener('alpine:init', initBrowseContext);
+	</script>
 </body>
 
 </html>
