@@ -55,7 +55,9 @@
 							<li 
 								class="link" 
 								x-data="
-									{ presentation: `${prev.label} <span class='oi' data-glyph='arrow-left' title='Arrow left' aria-hidden='true'></span>` }
+									{ 
+										presentation: `${prev.label} <span class='oi' data-glyph='arrow-left' title='Arrow left' aria-hidden='true'></span>`
+									}
 								" 
 								x-on:click="
 									ancestor = trail[index];

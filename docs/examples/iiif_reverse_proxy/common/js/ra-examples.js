@@ -4,17 +4,30 @@ const IIIF_COLLECTION_BASE_URL = "/iiif/collection/";
 const IIIF_COLLECTION_BASE_ACC_URL = "/iiif-acc/collection/";
 const TOP_COLLECTION_ID = "riksarkivet";
 
-const getCollection = async (uri) => {
-	console.log(`--- Getting ${uri} ---`);
+const prod = true;
 
-	return (await fetch(uri)).json();
+const collectionPath = (uri) => {
+	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/collection\/(.*)/;
+	const match = uri.match(regex);
+	return !!match && match.length > 1 ? match[1] : uri;
+}
+
+const getCollection = async (uri) => {
+	// For absolute URIs (including https://lbiiif.riksarkivet.se), extract the id part
+	const url = uri.startsWith("https")
+		? (prod ? IIIF_COLLECTION_BASE_URL : IIIF_COLLECTION_BASE_ACC_URL) + collectionPath(uri)
+		: uri;
+	console.log(`--- Getting ${uri} by way of ${url} ---`);
+
+	return (await fetch(url)).json();
 }
 
 const collectionUrl = () => {
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
 	const urlPart = params.arkiv ? `arkiv/${params.arkiv}` : TOP_COLLECTION_ID;
-	const url = `${IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
+	//const url = `${IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
+	const url = `${prod ? IIIF_COLLECTION_BASE_URL : IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
 	return url;
 }
 
