@@ -37,6 +37,10 @@
 					url = collectionUrl();
 					toggleLoading();
 					collection = await getCollection(url);
+					history.pushState({
+						collection: collection.id
+					}, null);
+					window.addEventListener('popstate', handleNavigation);
 					toggleLoading();
 				"
 			>
@@ -76,7 +80,6 @@
 	</dialog>
 	<script>
 		document.addEventListener("alpine:init", initBrowseContext);
-		window.addEventListener("popstate", handleNavigation);
 	</script>
 </body>
 

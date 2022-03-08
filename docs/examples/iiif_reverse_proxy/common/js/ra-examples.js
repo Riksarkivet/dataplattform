@@ -4,7 +4,7 @@ const IIIF_COLLECTION_BASE_URL = "/iiif/collection/";
 const IIIF_COLLECTION_BASE_ACC_URL = "/iiif-acc/collection/";
 const TOP_COLLECTION_ID = "riksarkivet";
 
-const prod = true;
+const prod = false;
 
 const collectionPath = (uri) => {
 	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/collection\/(.*)/;
@@ -51,16 +51,16 @@ const initBrowseContext = () => {
   
 		async selectItem() {
 			if (this.item.type === 'Collection') {
-				const collectionUri = this.collection.id;
-				history.pushState({
-					collection: collectionUri
-				}, null);
 				this.trail.push({
-					id: collectionUri,
+					id: this.collection.id,
 					label: this.collection.label.sv[0]
 				})
 				this.loading = true;
 				this.collection = await getCollection(this.item.id)
+				console.log(`--- Pushing state ${this.collection.id} ---`);
+				history.pushState({
+					collection: this.collection.id
+				}, null);
 				this.loading = false;
 			} else {
 				this.image.present = true
@@ -74,12 +74,12 @@ const initBrowseContext = () => {
 			this.loading = true;
 			this.collection = await getCollection(ancestor.id);
 			this.loading = false;
+		},
+
+		handleNavigation(event) {
+			if (event.state) {
+				console.log(`>>> ${JSON.stringify(event.state)}`)
+			}
 		}
 	}))
-}
-
-const handleNavigation = (event) => {
-	if (event.state) {
-		console.log(`>>> ${JSON.stringify(event.state)}`)
-	}
 }
