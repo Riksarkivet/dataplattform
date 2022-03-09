@@ -26,7 +26,6 @@ const collectionUrl = () => {
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
 	const urlPart = params.arkiv ? `arkiv/${params.arkiv}` : TOP_COLLECTION_ID;
-	//const url = `${IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
 	const url = `${prod ? IIIF_COLLECTION_BASE_URL : IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
 	return url;
 }
@@ -40,45 +39,56 @@ const backLink = (prev) => {
 }
 
 const initBrowseContext = () => {
-	Alpine.data('browseContext', () => ({
+	Alpine.store("browseContext", {
 		trail: [],
-		item: {},
-		collection: {},
+		loading: false,
 
 		toggleLoading() {
 			this.loading = !this.loading;
 		},
   
+		async goBack(index) {
+			const store = Alpine.store("browseContext");
+			const ancestor = store.trail[index];
+			store.trail = store.trail.slice(0, index);
+			store.toggleLoading();
+			this.collection = await getCollection(ancestor.id);
+			store.toggleLoading();
+		},
+		
+		async handleNavigation(event) {
+			if (event.state) {
+				const store = Alpine.store("browseContext");
+				for (index = store.trail.length -1; index >= 0; index--) {
+					if (store.trail[index].id === event.state.collection) {
+						await store.goBack(index);
+					}
+				}
+			}
+		}
+	});
+
+	Alpine.data('browseContext', () => ({
+		item: {},
+		collection: {},
+
 		async selectItem() {
 			if (this.item.type === 'Collection') {
-				this.trail.push({
+				const store = Alpine.store("browseContext");
+				store.trail.push({
 					id: this.collection.id,
 					label: this.collection.label.sv[0]
 				})
-				this.loading = true;
+				store.toggleLoading;
 				this.collection = await getCollection(this.item.id)
 				console.log(`--- Pushing state ${this.collection.id} ---`);
 				history.pushState({
 					collection: this.collection.id
 				}, null);
-				this.loading = false;
+				store.toggleLoading;
 			} else {
 				this.image.present = true
 				this.image.id = this.item.id
-			}
-		},
-
-		async goBack(index) {
-			const ancestor = this.trail[index];
-			this.trail = this.trail.slice(0, index);
-			this.loading = true;
-			this.collection = await getCollection(ancestor.id);
-			this.loading = false;
-		},
-
-		handleNavigation(event) {
-			if (event.state) {
-				console.log(`>>> ${JSON.stringify(event.state)}`)
 			}
 		}
 	}))

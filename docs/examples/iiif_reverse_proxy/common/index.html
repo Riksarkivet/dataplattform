@@ -35,13 +35,12 @@
 				x-data="browseContext()" 
 				x-init="
 					url = collectionUrl();
-					toggleLoading();
+					$store.browseContext.toggleLoading();
 					collection = await getCollection(url);
 					history.pushState({
 						collection: collection.id
 					}, null);
-					window.addEventListener('popstate', handleNavigation);
-					toggleLoading();
+					$store.browseContext.toggleLoading();
 				"
 			>
 				<details>
@@ -50,8 +49,8 @@
 					</summary>
 					<p x-text="collection?.summary?.sv[0]"></p>
 					<ul>
-						<template x-for="(prev, index) in trail" :key="prev.id">
-							<li class="link" x-data="{ presentation: backLink(prev) }" x-on:click="goBack(index)">
+						<template x-for="(prev, index) in $store.browseContext.trail" :key="prev.id">
+							<li class="link" x-data="{ presentation: backLink(prev) }" x-on:click="$store.browseContext.goBack(index)">
 								<span x-html="presentation"></span>
 							</li>
 						</template>
