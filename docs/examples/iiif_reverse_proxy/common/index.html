@@ -13,14 +13,21 @@
 	<script src="/js/ra-examples.js"></script>
 </head>
 
-<body x-data="
-	{ 
-		loading: false,
-		image: {
-			present: false
-		}
-	}
-">
+<body 
+	x-data="browseContext()" 
+	x-init="
+		url = collectionUrl();
+		loading = true;
+		collection = await getCollection(url);
+		history.pushState({
+			collection: collection.id
+		}, null);
+		$store.browseContext.trail = trail;
+		$store.browseContext.goBack = goBack;
+		loading = false;
+		window.addEventListener('popstate', handleNavigation);
+	"
+>
 	<main class="container">
 		<h1>Riksarkivets API-er</h1>
 
@@ -31,26 +38,15 @@
 				<a href="https://iiif.io/api/presentation/3.0/">IIIF Presentation API</a>.
 			</p>
 
-			<article 
-				x-data="browseContext()" 
-				x-init="
-					url = collectionUrl();
-					$store.browseContext.toggleLoading();
-					collection = await getCollection(url);
-					history.pushState({
-						collection: collection.id
-					}, null);
-					$store.browseContext.toggleLoading();
-				"
-			>
+			<article>
 				<details>
 					<summary>
 						<strong x-text="collection?.label?.sv[0]"></strong>
 					</summary>
 					<p x-text="collection?.summary?.sv[0]"></p>
 					<ul>
-						<template x-for="(prev, index) in $store.browseContext.trail" :key="prev.id">
-							<li class="link" x-data="{ presentation: backLink(prev) }" x-on:click="$store.browseContext.goBack(index)">
+						<template x-for="(prev, index) in trail" :key="prev.id">
+							<li class="link" x-data="{ presentation: backLink(prev) }" x-on:click="goBack(index)">
 								<span x-html="presentation"></span>
 							</li>
 						</template>
