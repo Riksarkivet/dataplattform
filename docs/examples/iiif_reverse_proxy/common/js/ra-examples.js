@@ -40,71 +40,43 @@ const backLink = (prev) => {
 
 const initBrowseContext = () => {
 	Alpine.store("browseContext", {
-		trail: [],
-		goBack: null,
-		loading: false
-
-	// 	toggleLoading() {
-	// 		this.loading = !this.loading;
-	// 	},
-  
-	// 	async goBack(index) {
-	// 		const store = Alpine.store("browseContext");
-	// 		const ancestor = store.trail[index];
-	// 		store.trail = store.trail.slice(0, index);
-	// 		store.toggleLoading();
-	// 		this.collection = await getCollection(ancestor.id);
-	// 		store.toggleLoading();
-	// 	},
-		
-	// 	async handleNavigation(event) {
-	// 		if (event.state) {
-	// 			const store = Alpine.store("browseContext");
-	// 			for (index = store.trail.length -1; index >= 0; index--) {
-	// 				if (store.trail[index].id === event.state.collection) {
-	// 					await store.goBack(index);
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	});
-
-	Alpine.data("browseContext", () => ({
 		loading: false,
 		trail: [],
+		collection: {},
 		image: {
 			present: false,
 			id: null
 		},
-		collection: {},
 
-		async selectItem() {
-			if (this.item.type === 'Collection') {
-				this.trail.push({
-					id: this.collection.id,
-					label: this.collection.label.sv[0]
-				})
-				this.loading = true;
-				this.collection = await getCollection(this.item.id)
-				console.log(`--- Pushing state ${this.collection.id} ---`);
-				history.pushState({
-					collection: this.collection.id
-				}, null);
-				this.loading = false;
-			} else {
-				this.image.present = true
-				this.image.id = this.item.id
+		toggleLoading() {
+			this.loading = !this.loading;
+		},
+  
+		async goBack(index) {
+			const store = Alpine.store("browseContext");
+			const ancestor = store.trail[index];
+			store.trail = store.trail.slice(0, index);
+			store.toggleLoading();
+			this.collection = await getCollection(ancestor.id);
+			store.toggleLoading();
+		},
+
+		closeImage() {
+			const store = Alpine.store("browseContext");
+			if (store.image.present) {
+				store.image = {
+					present: false,
+					id: null
+				};
 			}
 		},
-
-		async goBack(index) {
-			const ancestor = this.trail[index];
-			this.trail = this.trail.slice(0, index);
-			this.loading = true;
-			this.collection = await getCollection(ancestor.id);
-			this.loading = false;
-		},
 		
+		/**
+		 * Handler for browser back/forward event. NB: only handles back, forward is
+		 * too complex for this simple example
+		 * 
+		 * @param {*} event 
+		 */
 		async handleNavigation(event) {
 			if (event.state) {
 				const store = Alpine.store("browseContext");
@@ -115,5 +87,29 @@ const initBrowseContext = () => {
 				}
 			}
 		}
-	}))
+	});
+
+	Alpine.data("browseContext", () => ({
+		item: {},
+
+		async selectItem() {
+			const store = Alpine.store("browseContext");
+			if (this.item.type === 'Collection') {
+				store.trail.push({
+					id: store.collection.id,
+					label: store.collection.label.sv[0]
+				})
+				store.loading = true;
+				store.collection = await getCollection(this.item.id)
+				console.log(`--- Pushing state ${store.collection.id} ---`);
+				history.pushState({
+					collection: store.collection.id
+				}, null);
+				store.loading = false;
+			} else {
+				store.image.present = true
+				store.image.id = this.item.id
+			}
+		}
+	}));
 }

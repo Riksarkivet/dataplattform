@@ -17,15 +17,13 @@
 	x-data="browseContext()" 
 	x-init="
 		url = collectionUrl();
-		loading = true;
-		collection = await getCollection(url);
+		$store.browseContext.loading = true;
+		$store.browseContext.collection = await getCollection(url);
 		history.pushState({
-			collection: collection.id
+			collection: $store.browseContext.collection.id
 		}, null);
-		$store.browseContext.trail = trail;
-		$store.browseContext.goBack = goBack;
-		loading = false;
-		window.addEventListener('popstate', handleNavigation);
+		$store.browseContext.loading = false;
+		window.addEventListener('popstate', $store.browseContext.handleNavigation);
 	"
 >
 	<main class="container">
@@ -41,20 +39,20 @@
 			<article>
 				<details>
 					<summary>
-						<strong x-text="collection?.label?.sv[0]"></strong>
+						<strong x-text="$store.browseContext.collection?.label?.sv[0]"></strong>
 					</summary>
-					<p x-text="collection?.summary?.sv[0]"></p>
+					<p x-text="$store.browseContext.collection?.summary?.sv[0]"></p>
 					<ul>
-						<template x-for="(prev, index) in trail" :key="prev.id">
-							<li class="link" x-data="{ presentation: backLink(prev) }" x-on:click="goBack(index)">
+						<template x-for="(prev, index) in $store.browseContext.trail" :key="prev.id">
+							<li class="link" x-data="{ presentation: backLink(prev) }" @click="$store.browseContext.goBack(index)">
 								<span x-html="presentation"></span>
 							</li>
 						</template>
 					</ul>
 					<hr>
 					<ul>
-						<template x-for="item in collection?.items" :key="item.id">
-							<li class="link" x-data="{ presentation: itemLink(item) }" x-on:click="selectItem">
+						<template x-for="item in $store.browseContext.collection?.items" :key="item.id">
+							<li class="link" x-data="{ presentation: itemLink(item) }" @click="selectItem">
 								<span x-html="presentation"></span>
 							</li>
 						</template>
@@ -63,14 +61,14 @@
 			</article>
 		</article>
 	</main>
-	<dialog x-bind:open="loading">
+	<dialog x-bind:open="$store.browseContext.loading">
 		<article>
 			<p aria-busy="true">Arbete pågår...</p>
 		</article>
 	</dialog>
-	<dialog x-bind:open="image.present">
+	<dialog x-bind:open="$store.browseContext.image.present" @click="$store.browseContext.closeImage()">
 		<article>
-			Bild: <span x-text="image.id"></span>
+			Bild: <span x-text="$store.browseContext.image.id"></span>
 		</article>
 	</dialog>
 	<script>
