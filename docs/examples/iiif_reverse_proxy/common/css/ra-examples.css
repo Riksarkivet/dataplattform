@@ -1,3 +1,15 @@
+dialog.image article {
+	height: 90%;
+	width: 90%;
+	max-width: none;
+}
+
+button.close {
+	position: relative;
+	top: 1em;
+	right: 1em;
+}
+
 .link {
 	cursor: pointer;
 }

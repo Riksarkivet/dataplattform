@@ -66,8 +66,9 @@
 			<p aria-busy="true">Arbete pågår...</p>
 		</article>
 	</dialog>
-	<dialog x-bind:open="$store.browseContext.image.present" @click="$store.browseContext.closeImage()">
+	<dialog class="image" x-bind:open="$store.browseContext.image.present">
 		<article>
+			<button class="close" @click="$store.browseContext.closeImage()"></button> 
 			Bild: <span x-text="$store.browseContext.image.id"></span>
 		</article>
 	</dialog>
