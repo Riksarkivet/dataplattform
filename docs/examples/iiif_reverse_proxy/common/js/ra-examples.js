@@ -1,10 +1,13 @@
 "use strict";
 
-const IIIF_COLLECTION_BASE_URL = "/iiif/collection/";
-const IIIF_COLLECTION_BASE_ACC_URL = "/iiif-acc/collection/";
+const IIIF_BASE_URL = "/iiif/";
+const IIIF_BASE_ACC_URL = "/iiif/";
+
+const IIIF_COLLECTION_BASE_URL = `${IIIF_BASE_URL}collection/`;
+const IIIF_COLLECTION_BASE_ACC_URL = `${IIIF_BASE_ACC_URL}collection/`;
 const TOP_COLLECTION_ID = "riksarkivet";
 
-const prod = false;
+const prod = true;
 
 const collectionPath = (uri) => {
 	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/collection\/(.*)/;
@@ -16,6 +19,22 @@ const getCollection = async (uri) => {
 	// For absolute URIs (including https://lbiiif.riksarkivet.se), extract the id part
 	const url = uri.startsWith("https")
 		? (prod ? IIIF_COLLECTION_BASE_URL : IIIF_COLLECTION_BASE_ACC_URL) + collectionPath(uri)
+		: uri;
+	console.log(`--- Getting ${uri} by way of ${url} ---`);
+
+	return (await fetch(url)).json();
+}
+
+const manifestPath = (uri) => {
+	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/(.*)/;
+	const match = uri.match(regex);
+	return !!match && match.length > 1 ? match[1] : uri;
+}
+
+const getManifest = async (uri) => {
+	// For absolute URIs (including https://lbiiif.riksarkivet.se), extract the id part
+	const url = uri.startsWith("https")
+		? (prod ? IIIF_BASE_URL : IIIF_BASE_ACC_URL) + manifestPath(uri)
 		: uri;
 	console.log(`--- Getting ${uri} by way of ${url} ---`);
 
@@ -45,7 +64,8 @@ const initBrowseContext = () => {
 		collection: {},
 		image: {
 			present: false,
-			id: null
+			id: null,
+			urls: []
 		},
 
 		toggleLoading() {
@@ -107,8 +127,11 @@ const initBrowseContext = () => {
 				}, null);
 				store.loading = false;
 			} else {
-				store.image.present = true
-				store.image.id = this.item.id
+				store.image.present = true;
+				store.image.id = this.item.id;
+				const manifest = await getManifest(this.item.id);
+				store.image.urls = manifest.items.map(element => element.items[0].items[0].body.id);
+				store.image.bp = true;
 			}
 		}
 	}));

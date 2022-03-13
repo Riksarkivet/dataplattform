@@ -68,8 +68,15 @@
 	</dialog>
 	<dialog class="image" x-bind:open="$store.browseContext.image.present">
 		<article>
-			<button class="close" @click="$store.browseContext.closeImage()"></button> 
+			<button role="button" class="close outline contrast" @click="$store.browseContext.closeImage()"></button> 
 			Bild: <span x-text="$store.browseContext.image.id"></span>
+			<ul>
+				<template x-for="url in $store.browseContext.image.urls">
+					<li>
+						<a x-bind:href="url" x-text="url"></a>
+					</li>
+				</template>
+			</ul>
 		</article>
 	</dialog>
 	<script>
