@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="/css/ra-examples.css">
 	<script src="https://unpkg.com/alpinejs" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js" integrity="sha512-Dq5iZeGNxm7Ql/Ix10sugr98niMRyuObKlIzKN1SzUysEXBxti479CTsCiTV00gFlDeDO3zhBsyCOO+v6QVwJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="/js/ra-examples.js"></script>
 </head>
 
@@ -69,14 +70,7 @@
 	<dialog class="image" x-bind:open="$store.browseContext.image.present">
 		<article>
 			<button role="button" class="close outline contrast" @click="$store.browseContext.closeImage()"></button> 
-			Bild: <span x-text="$store.browseContext.image.id"></span>
-			<ul>
-				<template x-for="url in $store.browseContext.image.urls">
-					<li>
-						<a x-bind:href="url" x-text="url"></a>
-					</li>
-				</template>
-			</ul>
+			<div id="viewer"></div>
 		</article>
 	</dialog>
 	<script>

@@ -1,13 +1,13 @@
 "use strict";
 
 const IIIF_BASE_URL = "/iiif/";
-const IIIF_BASE_ACC_URL = "/iiif/";
+const IIIF_BASE_ACC_URL = "/iiif-acc/";
 
 const IIIF_COLLECTION_BASE_URL = `${IIIF_BASE_URL}collection/`;
 const IIIF_COLLECTION_BASE_ACC_URL = `${IIIF_BASE_ACC_URL}collection/`;
 const TOP_COLLECTION_ID = "riksarkivet";
 
-const prod = true;
+const prod = false;
 
 const collectionPath = (uri) => {
 	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/collection\/(.*)/;
@@ -47,6 +47,14 @@ const collectionUrl = () => {
 	const urlPart = params.arkiv ? `arkiv/${params.arkiv}` : TOP_COLLECTION_ID;
 	const url = `${prod ? IIIF_COLLECTION_BASE_URL : IIIF_COLLECTION_BASE_ACC_URL}${urlPart}`;
 	return url;
+}
+
+const imageUrl = (uri, v2 = false) => {
+	const regex = /https:\/\/lbiiif(?:-acc)?.riksarkivet.se\/(.*)/;
+	const match = uri.match(regex);
+	return !!match && match.length > 1 
+		? `${prod ? IIIF_BASE_URL : IIIF_BASE_ACC_URL}${v2 ? "v2/" : ""}${match[1]}`
+		: uri;
 }
 
 const itemLink = (item) => {
@@ -130,8 +138,16 @@ const initBrowseContext = () => {
 				store.image.present = true;
 				store.image.id = this.item.id;
 				const manifest = await getManifest(this.item.id);
-				store.image.urls = manifest.items.map(element => element.items[0].items[0].body.id);
-				store.image.bp = true;
+				store.image.urls = manifest.items.map(element => imageUrl(element.items[0].items[0].body.id, true));
+				const tileSources = store.image.urls.map(url => ({
+					type: "image",
+					url: url
+				}));
+				const viewer = OpenSeadragon({
+					id: "viewer",
+					prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon/build/openseadragon/images/",
+					tileSources: tileSources
+				});
 			}
 		}
 	}));
