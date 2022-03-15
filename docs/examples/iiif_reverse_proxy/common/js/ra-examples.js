@@ -139,15 +139,15 @@ const initBrowseContext = () => {
 				store.image.id = this.item.id;
 				const manifest = await getManifest(this.item.id);
 				store.image.urls = manifest.items.map(element => imageUrl(element.items[0].items[0].body.id, true));
-				const tileSources = store.image.urls.map(url => ({
-					type: "image",
-					url: url
-				}));
-				const viewer = OpenSeadragon({
-					id: "viewer",
-					prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon/build/openseadragon/images/",
-					tileSources: tileSources
-				});
+				// const tileSources = store.image.urls.map(url => ({
+				// 	type: "image",
+				// 	url: url
+				// }));
+				// const viewer = OpenSeadragon({
+				// 	id: "viewer",
+				// 	prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon/build/openseadragon/images/",
+				// 	tileSources: tileSources
+				// });
 			}
 		}
 	}));

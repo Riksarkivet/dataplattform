@@ -1,13 +1,10 @@
 dialog.image article {
-	height: 90%;
-	width: 90%;
+	height: 100%;
+	width: 100%;
 	max-width: none;
 }
 
-button.close {
-	position: relative;
-	top: 1em;
-	right: 1em;
+dialog.image article button.close {
 }
 
 .link {
@@ -21,4 +18,11 @@ button.close {
 .oi {
 	margin-left: 0.5em;
 	vertical-align: middle;
+}
+
+.image img {
+	box-shadow: var(--card-box-shadow);
+	max-height: 100%;
+	max-width: 100%;
+	margin-top: calc(0 - var(--typography-spacing-vertical));
 }
