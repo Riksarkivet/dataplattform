@@ -1,0 +1,11 @@
+version: '3'
+services:
+  proxy:
+    image: "iiif-proxy-nginx:latest"
+    build: .
+    container_name: nginx_proxy
+    ports:
+      - "8100:80"
+    volumes:
+      - ../common:/usr/share/nginx/html
+
