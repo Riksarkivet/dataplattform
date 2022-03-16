@@ -1,10 +1,45 @@
+dialog.image[open] {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: var(--spacing);
+}
+
 dialog.image article {
 	height: 100%;
 	width: 100%;
 	max-width: none;
+	margin: 0;
+	padding: var(--spacing);
+	position: relative;
 }
 
 dialog.image article button.close {
+	margin: 0;
+	position: absolute;
+	top: var(--spacing);
+	right: var(--spacing);
+}
+
+dialog.image article a.browse {
+	position: absolute;
+	bottom: var(--spacing);
+}
+
+dialog.image article a.browse .oi {
+	margin: 0;
+}
+
+.left {
+	left: var(--spacing);
+}
+
+.right {
+	right: var(--spacing);
 }
 
 .link {
@@ -24,5 +59,7 @@ dialog.image article button.close {
 	box-shadow: var(--card-box-shadow);
 	max-height: 100%;
 	max-width: 100%;
-	margin-top: calc(0 - var(--typography-spacing-vertical));
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

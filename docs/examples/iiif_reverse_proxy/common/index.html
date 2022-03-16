@@ -76,12 +76,26 @@
 				<img x-bind:src="$store.browseContext.image.urls[imageIndex]">
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" @click="imageIndex--">
+				<a href="#" role="button" class="browse left outline contrast" @click="
+						if (imageIndex > 0) {
+							imageIndex--;
+						 } else {
+							 imageIndex = $store.browseContext.image.urls.length - 1;
+						 }
+					"
+				>
 					<span class="oi" data-glyph="chevron-left" title="Föregående" aria-hidden="true"></span>
 				</a>
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" @click="imageIndex++">
+				<a href="#" role="button" class="browse right outline contrast" @click="
+						if (imageIndex < $store.browseContext.image.urls.length - 1) {
+							imageIndex++;
+						} else {
+							imageIndex = 0;
+						} 
+					"
+				>
 					<span class="oi" data-glyph="chevron-right" title="Föregående" aria-hidden="true"></span>
 				</a>
 			</template>
