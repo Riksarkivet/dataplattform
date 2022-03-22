@@ -10,9 +10,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="/css/ra-examples.css">
 	<script src="https://unpkg.com/alpinejs" defer></script>
-	<!--
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js" integrity="sha512-Dq5iZeGNxm7Ql/Ix10sugr98niMRyuObKlIzKN1SzUysEXBxti479CTsCiTV00gFlDeDO3zhBsyCOO+v6QVwJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	-->
 	<script src="/js/ra-examples.js"></script>
 </head>
 
@@ -76,25 +73,13 @@
 				<img x-bind:src="$store.browseContext.image.urls[imageIndex]">
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" class="browse left outline contrast" @click="
-						if (imageIndex > 0) {
-							imageIndex--;
-						 } else {
-							 imageIndex = $store.browseContext.image.urls.length - 1;
-						 }
-					"
+				<a href="#" role="button" class="browse left outline contrast" @click="stepImage(imageIndex, true)"
 				>
 					<span class="oi" data-glyph="chevron-left" title="Föregående" aria-hidden="true"></span>
 				</a>
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" class="browse right outline contrast" @click="
-						if (imageIndex < $store.browseContext.image.urls.length - 1) {
-							imageIndex++;
-						} else {
-							imageIndex = 0;
-						} 
-					"
+				<a href="#" role="button" class="browse right outline contrast" @click="stepImage(imageIndex, false)"
 				>
 					<span class="oi" data-glyph="chevron-right" title="Föregående" aria-hidden="true"></span>
 				</a>
