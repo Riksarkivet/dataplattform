@@ -4,11 +4,4 @@
 
 Dataplattformen är en samling tjänster och APIer som gör Riksarkivets publika data tillgängliga för återanvändning i andra system.
 
-## API-dokumentation
-
-### [OAI-PMH](docs/OAI-PMH.md)
-
-### [IIIF](docs/IIIF.md)
-
-----
-## [Användningsvillkor](TOS.md)
+Mer information [finns i Wiki](https://github.com/Riksarkivet/dataplattform/wiki) 
