@@ -73,14 +73,12 @@
 				<img x-bind:src="$store.browseContext.image.urls[imageIndex]">
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" class="browse left outline contrast" @click="stepImage(imageIndex, true)"
-				>
+				<a href="#" role="button" class="browse left outline contrast" @click="imageIndex = stepImage(imageIndex, true)">
 					<span class="oi" data-glyph="chevron-left" title="Föregående" aria-hidden="true"></span>
 				</a>
 			</template>
 			<template x-if="$store.browseContext.image?.urls?.length > 0">
-				<a href="#" role="button" class="browse right outline contrast" @click="stepImage(imageIndex, false)"
-				>
+				<a href="#" role="button" class="browse right outline contrast" @click="imageIndex = stepImage(imageIndex, false)">
 					<span class="oi" data-glyph="chevron-right" title="Föregående" aria-hidden="true"></span>
 				</a>
 			</template>

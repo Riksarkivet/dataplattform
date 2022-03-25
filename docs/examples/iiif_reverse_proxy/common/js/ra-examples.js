@@ -102,17 +102,9 @@ const itemLink = (item) => {
 const stepImage = (imageIndex, forward) => {
 	const store = Alpine.store("browseContext")
 	if (forward) {
-		if (imageIndex < store.image.urls.length - 1) {
-			imageIndex++;
-		} else {
-			imageIndex = 0;
-		} 
+		return (imageIndex < store.image.urls.length - 1) ? imageIndex + 1 : 0;
 	} else {
-		if (imageIndex > 0) {
-			imageIndex--;
-		} else {
-			imageIndex = store.image.urls.length - 1;
-		}
+		return (imageIndex > 0) ? imageIndex - 1 : store.image.urls.length - 1;
 	}
 }
 
