@@ -8,11 +8,10 @@ if __name__ == "__main__":
         res = requests.get(f'https://oai-pmh.riksarkivet.se/OAI?verb=GetRecord&identifier={urllib.parse.quote_plus(sys.argv[1])}&metadataPrefix=oai_ape_ead')
         if res.status_code == 200:
             tree = ET.fromstring(res.content)
-            print(tree)
             ref = tree.find('.//{*}ead/{*}archdesc/{*}otherfindaid/{*}p/{*}extref')
             if ref is not None:
                 ref_url = ref.attrib.get('{http://www.w3.org/1999/xlink}href')
-                print(ref_url.split('/')[-1])
+                print(f'Reference code: {ref_url.split("/")[-1]}')
             else:
                 print('Cannot find PID reference')
         else:
